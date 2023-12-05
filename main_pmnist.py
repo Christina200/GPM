@@ -21,6 +21,8 @@ import argparse,time
 import math
 from copy import deepcopy
 
+import tracemalloc
+
 ## Define MLP model
 class MLPNet(nn.Module):
     def __init__(self, n_hidden=100, n_outputs=10):
@@ -243,12 +245,16 @@ def main(args):
 
             for epoch in range(1, args.n_epochs+1):
                 # Train
-                clock0=time.time()
+                # clock0=time.time()
+                tracemalloc.start()
                 train(args, model, device, xtrain, ytrain, optimizer, criterion)
-                clock1=time.time()
+                print(f'Train T0: {tracemalloc.get_traced_memory()}')
+                tracemalloc.stop()
+                # clock1=time.time()
                 tr_loss,tr_acc = test(args, model, device, xtrain, ytrain,  criterion)
-                print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% | time={:5.1f}ms |'.format(epoch,\
-                                                            tr_loss,tr_acc, 1000*(clock1-clock0)),end='')
+                # print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% | time={:5.1f}ms |'.format(epoch,\
+                #                                             tr_loss,tr_acc, 1000*(clock1-clock0)),end='')
+                print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% |'.format(epoch,tr_loss,tr_acc),end='')
                 # Validate
                 valid_loss,valid_acc = test(args, model, device, xvalid, yvalid,  criterion)
                 print(' Valid: loss={:.3f}, acc={:5.1f}% |'.format(valid_loss, valid_acc),end='')
@@ -272,12 +278,16 @@ def main(args):
             print ('-'*40)
             for epoch in range(1, args.n_epochs+1):
                 # Train 
-                clock0=time.time()
+                # clock0=time.time()
+                tracemalloc.start()
                 train_projected(args, model,device,xtrain, ytrain,optimizer,criterion,feature_mat)
-                clock1=time.time()
+                print(f'Train T{task_id}: {tracemalloc.get_traced_memory()}')
+                tracemalloc.stop()
+                # clock1=time.time()
                 tr_loss, tr_acc = test(args, model, device, xtrain, ytrain,  criterion)
-                print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% | time={:5.1f}ms |'.format(epoch,\
-                                                        tr_loss, tr_acc, 1000*(clock1-clock0)),end='')
+                # print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% | time={:5.1f}ms |'.format(epoch,\
+                #                                         tr_loss, tr_acc, 1000*(clock1-clock0)),end='')
+                print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% |'.format(epoch,tr_loss, tr_acc),end='')
                 # Validate
                 valid_loss,valid_acc = test(args, model, device, xvalid, yvalid,  criterion)
                 print(' Valid: loss={:.3f}, acc={:5.1f}% |'.format(valid_loss, valid_acc),end='')
@@ -310,7 +320,7 @@ def main(args):
     print ('Final Avg Accuracy: {:5.2f}%'.format(acc_matrix[-1].mean())) 
     bwt=np.mean((acc_matrix[-1]-np.diag(acc_matrix))[:-1]) 
     print ('Backward transfer: {:5.2f}%'.format(bwt))
-    print('[Elapsed time = {:.1f} ms]'.format((time.time()-tstart)*1000))
+    # print('[Elapsed time = {:.1f} ms]'.format((time.time()-tstart)*1000))
     print('-'*50)
     # Plots
     array = acc_matrix
@@ -318,7 +328,7 @@ def main(args):
                       columns = [i for i in ["T1","T2","T3","T4","T5","T6","T7","T8","T9","T10"]])
     sn.set(font_scale=1.4) # for label size
     sn.heatmap(df_cm, annot=True, annot_kws={"size": 10})
-    plt.show()
+    plt.savefig('./figure/save/pmnist.png')
 
 
 if __name__ == "__main__":

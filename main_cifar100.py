@@ -435,7 +435,7 @@ def main(args):
                       columns = [i for i in ["T1","T2","T3","T4","T5","T6","T7","T8","T9","T10"]])
     sn.set(font_scale=1.4) 
     sn.heatmap(df_cm, annot=True, annot_kws={"size": 10})
-    plt.show()
+    plt.savefig('./figure/save/cifar100.png')
 
 
 if __name__ == "__main__":
