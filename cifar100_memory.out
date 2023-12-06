@@ -1,0 +1,2237 @@
+====================================================================================================
+Arguments =
+	batch_size_train: 64
+	batch_size_test: 64
+	n_epochs: 200
+	seed: 1
+	pc_valid: 0.05
+	lr: 0.01
+	momentum: 0.9
+	lr_min: 1e-05
+	lr_patience: 6
+	lr_factor: 2
+====================================================================================================
+GPU available: True
+Task order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+****************************************************************************************************
+Task  0 (cifar100-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+0 conv1.weight torch.Size([64, 3, 4, 4])
+1 bn1.weight torch.Size([64])
+2 bn1.bias torch.Size([64])
+3 conv2.weight torch.Size([128, 64, 3, 3])
+4 bn2.weight torch.Size([128])
+5 bn2.bias torch.Size([128])
+6 conv3.weight torch.Size([256, 128, 2, 2])
+7 bn3.weight torch.Size([256])
+8 bn3.bias torch.Size([256])
+9 fc1.weight torch.Size([2048, 1024])
+10 bn4.weight torch.Size([2048])
+11 bn4.bias torch.Size([2048])
+12 fc2.weight torch.Size([2048, 2048])
+13 bn5.weight torch.Size([2048])
+14 bn5.bias torch.Size([2048])
+15 fc3.0.weight torch.Size([10, 2048])
+16 fc3.1.weight torch.Size([10, 2048])
+17 fc3.2.weight torch.Size([10, 2048])
+18 fc3.3.weight torch.Size([10, 2048])
+19 fc3.4.weight torch.Size([10, 2048])
+20 fc3.5.weight torch.Size([10, 2048])
+21 fc3.6.weight torch.Size([10, 2048])
+22 fc3.7.weight torch.Size([10, 2048])
+23 fc3.8.weight torch.Size([10, 2048])
+24 fc3.9.weight torch.Size([10, 2048])
+----------------------------------------
+Train T0: (49170, 90422)
+Epoch   1 | Train: loss=1.558, acc= 46.3% | time=4274.9ms | Valid: loss=1.604, acc= 46.0% | *
+Train T0: (4042, 45294)
+Epoch   2 | Train: loss=1.459, acc= 51.5% | time=964.6ms | Valid: loss=1.472, acc= 52.0% | *
+Train T0: (2958, 44210)
+Epoch   3 | Train: loss=1.256, acc= 57.7% | time=2138.2ms | Valid: loss=1.327, acc= 55.6% | *
+Train T0: (2326, 43578)
+Epoch   4 | Train: loss=1.168, acc= 61.1% | time=2833.3ms | Valid: loss=1.216, acc= 62.0% | *
+Train T0: (2270, 43522)
+Epoch   5 | Train: loss=1.147, acc= 61.8% | time=1079.8ms | Valid: loss=1.255, acc= 64.0% |
+Train T0: (2294, 43546)
+Epoch   6 | Train: loss=1.041, acc= 66.0% | time=2917.4ms | Valid: loss=1.245, acc= 62.0% |
+Train T0: (2797, 44049)
+Epoch   7 | Train: loss=0.984, acc= 67.4% | time=1123.1ms | Valid: loss=1.188, acc= 60.8% | *
+Train T0: (2270, 43522)
+Epoch   8 | Train: loss=0.946, acc= 69.1% | time=2643.0ms | Valid: loss=1.186, acc= 62.4% | *
+Train T0: (2270, 43522)
+Epoch   9 | Train: loss=0.915, acc= 70.5% | time=701.8ms | Valid: loss=1.171, acc= 66.4% | *
+Train T0: (2396, 43648)
+Epoch  10 | Train: loss=0.910, acc= 71.0% | time=2950.4ms | Valid: loss=1.252, acc= 63.2% |
+Train T0: (2386, 43638)
+Epoch  11 | Train: loss=0.799, acc= 74.1% | time=618.6ms | Valid: loss=1.035, acc= 66.8% | *
+Train T0: (3112, 44364)
+Epoch  12 | Train: loss=0.792, acc= 74.4% | time=2055.5ms | Valid: loss=1.066, acc= 68.8% |
+Train T0: (2928, 44180)
+Epoch  13 | Train: loss=0.790, acc= 74.4% | time=2909.3ms | Valid: loss=1.103, acc= 69.2% |
+Train T0: (8873, 50125)
+Epoch  14 | Train: loss=0.772, acc= 75.2% | time=704.0ms | Valid: loss=1.156, acc= 70.0% |
+Train T0: (2270, 43522)
+Epoch  15 | Train: loss=0.634, acc= 78.9% | time=2625.7ms | Valid: loss=1.033, acc= 68.0% | *
+Train T0: (2270, 43522)
+Epoch  16 | Train: loss=0.627, acc= 79.5% | time=1060.9ms | Valid: loss=1.024, acc= 71.2% | *
+Train T0: (2270, 43522)
+Epoch  17 | Train: loss=0.626, acc= 79.6% | time=2150.2ms | Valid: loss=0.994, acc= 69.6% | *
+Train T0: (2270, 43522)
+Epoch  18 | Train: loss=0.617, acc= 79.3% | time=2700.7ms | Valid: loss=1.005, acc= 68.4% |
+Train T0: (2270, 43522)
+Epoch  19 | Train: loss=0.813, acc= 75.3% | time=1031.5ms | Valid: loss=1.152, acc= 66.4% |
+Train T0: (2270, 43522)
+Epoch  20 | Train: loss=0.549, acc= 81.6% | time=2822.8ms | Valid: loss=1.001, acc= 69.6% |
+Train T0: (2270, 43522)
+Epoch  21 | Train: loss=0.590, acc= 80.5% | time=882.7ms | Valid: loss=1.069, acc= 72.0% |
+Train T0: (2270, 43522)
+Epoch  22 | Train: loss=0.496, acc= 83.7% | time=2592.0ms | Valid: loss=0.967, acc= 70.4% | *
+Train T0: (2270, 43522)
+Epoch  23 | Train: loss=0.713, acc= 78.3% | time=768.3ms | Valid: loss=1.160, acc= 68.0% |
+Train T0: (2270, 43522)
+Epoch  24 | Train: loss=0.588, acc= 81.1% | time=2458.2ms | Valid: loss=1.142, acc= 69.2% |
+Train T0: (2270, 43522)
+Epoch  25 | Train: loss=0.431, acc= 85.6% | time=2611.0ms | Valid: loss=1.027, acc= 72.4% |
+Train T0: (2270, 43522)
+Epoch  26 | Train: loss=0.481, acc= 83.7% | time=1696.6ms | Valid: loss=1.016, acc= 71.2% |
+Train T0: (2270, 43522)
+Epoch  27 | Train: loss=0.855, acc= 75.2% | time=2811.0ms | Valid: loss=1.295, acc= 68.0% |
+Train T0: (2270, 43522)
+Epoch  28 | Train: loss=0.394, acc= 87.1% | time=724.8ms | Valid: loss=0.983, acc= 72.4% | lr=5.0e-03
+Train T0: (2766, 44018)
+Epoch  29 | Train: loss=0.286, acc= 90.2% | time=2756.3ms | Valid: loss=0.886, acc= 72.4% | *
+Train T0: (2270, 43522)
+Epoch  30 | Train: loss=0.280, acc= 90.6% | time=864.8ms | Valid: loss=0.925, acc= 73.6% |
+Train T0: (2270, 43522)
+Epoch  31 | Train: loss=0.271, acc= 90.9% | time=2868.8ms | Valid: loss=0.890, acc= 73.2% |
+Train T0: (2270, 43522)
+Epoch  32 | Train: loss=0.284, acc= 90.0% | time=1377.5ms | Valid: loss=0.930, acc= 74.4% |
+Train T0: (2270, 43522)
+Epoch  33 | Train: loss=0.378, acc= 87.4% | time=2755.5ms | Valid: loss=1.078, acc= 73.2% |
+Train T0: (2270, 43522)
+Epoch  34 | Train: loss=0.257, acc= 90.9% | time=1017.6ms | Valid: loss=0.921, acc= 74.8% |
+Train T0: (2270, 43522)
+Epoch  35 | Train: loss=0.269, acc= 91.0% | time=2076.5ms | Valid: loss=0.890, acc= 76.4% | lr=2.5e-03
+Train T0: (2270, 43522)
+Epoch  36 | Train: loss=0.219, acc= 92.8% | time=2925.0ms | Valid: loss=0.822, acc= 78.0% | *
+Train T0: (2270, 43522)
+Epoch  37 | Train: loss=0.208, acc= 92.9% | time=1358.8ms | Valid: loss=0.896, acc= 75.6% |
+Train T0: (2270, 43522)
+Epoch  38 | Train: loss=0.222, acc= 92.8% | time=2823.9ms | Valid: loss=0.833, acc= 74.4% |
+Train T0: (2270, 43522)
+Epoch  39 | Train: loss=0.216, acc= 92.7% | time=762.1ms | Valid: loss=0.924, acc= 74.0% |
+Train T0: (2270, 43522)
+Epoch  40 | Train: loss=0.205, acc= 93.0% | time=2076.5ms | Valid: loss=0.968, acc= 73.2% |
+Train T0: (2270, 43522)
+Epoch  41 | Train: loss=0.196, acc= 93.1% | time=2523.7ms | Valid: loss=0.922, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  42 | Train: loss=0.229, acc= 92.4% | time=643.7ms | Valid: loss=0.943, acc= 76.4% | lr=1.3e-03
+Train T0: (2270, 43522)
+Epoch  43 | Train: loss=0.185, acc= 93.7% | time=1901.2ms | Valid: loss=0.870, acc= 78.4% |
+Train T0: (2270, 43522)
+Epoch  44 | Train: loss=0.178, acc= 93.8% | time=2658.7ms | Valid: loss=0.849, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  45 | Train: loss=0.188, acc= 93.7% | time=608.5ms | Valid: loss=0.844, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  46 | Train: loss=0.178, acc= 93.9% | time=2724.5ms | Valid: loss=0.847, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  47 | Train: loss=0.177, acc= 94.0% | time=970.9ms | Valid: loss=0.861, acc= 76.0% |
+Train T0: (2270, 43522)
+Epoch  48 | Train: loss=0.175, acc= 94.0% | time=1752.0ms | Valid: loss=0.840, acc= 75.2% | lr=6.3e-04
+Train T0: (2270, 43522)
+Epoch  49 | Train: loss=0.167, acc= 94.7% | time=2632.9ms | Valid: loss=0.880, acc= 77.2% |
+Train T0: (2270, 43522)
+Epoch  50 | Train: loss=0.173, acc= 93.8% | time=597.3ms | Valid: loss=0.850, acc= 79.2% |
+Train T0: (2270, 43522)
+Epoch  51 | Train: loss=0.174, acc= 93.6% | time=2397.9ms | Valid: loss=0.884, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  52 | Train: loss=0.168, acc= 94.4% | time=1133.0ms | Valid: loss=0.865, acc= 76.0% |
+Train T0: (2270, 43522)
+Epoch  53 | Train: loss=0.162, acc= 94.6% | time=1601.9ms | Valid: loss=0.851, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  54 | Train: loss=0.155, acc= 94.4% | time=2482.5ms | Valid: loss=0.793, acc= 77.2% | *
+Train T0: (2270, 43522)
+Epoch  55 | Train: loss=0.165, acc= 94.5% | time=558.2ms | Valid: loss=0.859, acc= 77.2% |
+Train T0: (2270, 43522)
+Epoch  56 | Train: loss=0.164, acc= 94.3% | time=2700.2ms | Valid: loss=0.823, acc= 78.0% |
+Train T0: (2270, 43522)
+Epoch  57 | Train: loss=0.157, acc= 94.7% | time=1288.9ms | Valid: loss=0.848, acc= 78.0% |
+Train T0: (2270, 43522)
+Epoch  58 | Train: loss=0.164, acc= 94.5% | time=2849.0ms | Valid: loss=0.831, acc= 78.0% |
+Train T0: (2270, 43522)
+Epoch  59 | Train: loss=0.164, acc= 94.4% | time=1842.8ms | Valid: loss=0.874, acc= 75.2% |
+Train T0: (2270, 43522)
+Epoch  60 | Train: loss=0.158, acc= 95.1% | time=2221.6ms | Valid: loss=0.854, acc= 76.8% | lr=3.1e-04
+Train T0: (2270, 43522)
+Epoch  61 | Train: loss=0.158, acc= 94.9% | time=2727.3ms | Valid: loss=0.820, acc= 77.6% |
+Train T0: (2270, 43522)
+Epoch  62 | Train: loss=0.154, acc= 94.5% | time=2071.7ms | Valid: loss=0.861, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  63 | Train: loss=0.158, acc= 95.0% | time=2772.3ms | Valid: loss=0.842, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  64 | Train: loss=0.153, acc= 94.8% | time=682.2ms | Valid: loss=0.868, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  65 | Train: loss=0.154, acc= 94.8% | time=2788.4ms | Valid: loss=0.843, acc= 75.2% |
+Train T0: (2270, 43522)
+Epoch  66 | Train: loss=0.151, acc= 95.1% | time=2056.6ms | Valid: loss=0.828, acc= 76.4% | lr=1.6e-04
+Train T0: (2270, 43522)
+Epoch  67 | Train: loss=0.159, acc= 95.0% | time=1629.9ms | Valid: loss=0.918, acc= 77.2% |
+Train T0: (2270, 43522)
+Epoch  68 | Train: loss=0.148, acc= 95.1% | time=2785.8ms | Valid: loss=0.877, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  69 | Train: loss=0.156, acc= 94.7% | time=1608.9ms | Valid: loss=0.873, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  70 | Train: loss=0.158, acc= 94.4% | time=2574.6ms | Valid: loss=0.845, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  71 | Train: loss=0.150, acc= 95.1% | time=753.5ms | Valid: loss=0.817, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  72 | Train: loss=0.150, acc= 95.1% | time=2753.9ms | Valid: loss=0.887, acc= 77.2% | lr=7.8e-05
+Train T0: (2270, 43522)
+Epoch  73 | Train: loss=0.152, acc= 95.1% | time=1105.4ms | Valid: loss=0.834, acc= 77.2% |
+Train T0: (2270, 43522)
+Epoch  74 | Train: loss=0.148, acc= 95.3% | time=2734.0ms | Valid: loss=0.839, acc= 76.0% |
+Train T0: (2270, 43522)
+Epoch  75 | Train: loss=0.151, acc= 95.0% | time=2580.3ms | Valid: loss=0.882, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  76 | Train: loss=0.149, acc= 94.9% | time=690.9ms | Valid: loss=0.875, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  77 | Train: loss=0.152, acc= 95.0% | time=2705.0ms | Valid: loss=0.874, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  78 | Train: loss=0.153, acc= 95.2% | time=962.8ms | Valid: loss=0.832, acc= 77.2% | lr=3.9e-05
+Train T0: (2270, 43522)
+Epoch  79 | Train: loss=0.153, acc= 94.9% | time=2978.3ms | Valid: loss=0.846, acc= 75.2% |
+Train T0: (2270, 43522)
+Epoch  80 | Train: loss=0.144, acc= 95.0% | time=2000.0ms | Valid: loss=0.820, acc= 76.4% |
+Train T0: (2270, 43522)
+Epoch  81 | Train: loss=0.147, acc= 94.9% | time=1849.9ms | Valid: loss=0.836, acc= 75.6% |
+Train T0: (2270, 43522)
+Epoch  82 | Train: loss=0.145, acc= 95.1% | time=2741.5ms | Valid: loss=0.873, acc= 75.6% |
+Train T0: (2270, 43522)
+Epoch  83 | Train: loss=0.151, acc= 95.0% | time=1030.4ms | Valid: loss=0.836, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  84 | Train: loss=0.150, acc= 94.8% | time=2953.1ms | Valid: loss=0.837, acc= 78.0% | lr=2.0e-05
+Train T0: (2270, 43522)
+Epoch  85 | Train: loss=0.154, acc= 94.9% | time=796.2ms | Valid: loss=0.849, acc= 75.6% |
+Train T0: (2270, 43522)
+Epoch  86 | Train: loss=0.153, acc= 94.8% | time=2884.1ms | Valid: loss=0.804, acc= 74.8% |
+Train T0: (2270, 43522)
+Epoch  87 | Train: loss=0.148, acc= 95.0% | time=2160.4ms | Valid: loss=0.888, acc= 76.8% |
+Train T0: (2270, 43522)
+Epoch  88 | Train: loss=0.147, acc= 94.9% | time=1464.1ms | Valid: loss=0.879, acc= 75.2% |
+Train T0: (2270, 43522)
+Epoch  89 | Train: loss=0.148, acc= 95.2% | time=2892.8ms | Valid: loss=0.819, acc= 78.0% |
+Train T0: (2270, 43522)
+Epoch  90 | Train: loss=0.150, acc= 94.9% | time=1179.5ms | Valid: loss=0.850, acc= 76.8% | lr=9.8e-06
+----------------------------------------
+Test: loss=0.853 , acc= 75.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.97 0.97 0.97 0.97 0.97]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 9/48
+Layer 2 : 126/576
+Layer 3 : 201/512
+Layer 4 : 80/1024
+Layer 5 : 98/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  1 (cifar100-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 1: (10024, 55617)
+Epoch   1 | Train: loss=1.460, acc= 49.7% | time=2773.2ms | Valid: loss=1.369, acc= 55.6% | *
+Train 1: (2960, 48553)
+Epoch   2 | Train: loss=1.334, acc= 54.5% | time=2920.3ms | Valid: loss=1.290, acc= 54.4% | *
+Train 1: (2960, 48553)
+Epoch   3 | Train: loss=1.270, acc= 56.7% | time=1534.1ms | Valid: loss=1.248, acc= 55.2% | *
+Train 1: (2320, 47913)
+Epoch   4 | Train: loss=1.178, acc= 60.0% | time=2797.4ms | Valid: loss=1.151, acc= 59.6% | *
+Train 1: (2320, 47913)
+Epoch   5 | Train: loss=1.154, acc= 60.4% | time=1028.4ms | Valid: loss=1.163, acc= 60.4% |
+Train 1: (2320, 47913)
+Epoch   6 | Train: loss=1.075, acc= 63.5% | time=2849.4ms | Valid: loss=1.090, acc= 63.2% | *
+Train 1: (2320, 47913)
+Epoch   7 | Train: loss=1.054, acc= 64.5% | time=953.2ms | Valid: loss=1.118, acc= 59.6% |
+Train 1: (2320, 47913)
+Epoch   8 | Train: loss=0.997, acc= 66.3% | time=2719.8ms | Valid: loss=1.099, acc= 60.4% |
+Train 1: (2320, 47913)
+Epoch   9 | Train: loss=0.966, acc= 67.4% | time=1253.4ms | Valid: loss=1.053, acc= 62.8% | *
+Train 1: (2320, 47913)
+Epoch  10 | Train: loss=0.938, acc= 68.0% | time=3044.6ms | Valid: loss=1.035, acc= 64.8% | *
+Train 1: (2320, 47913)
+Epoch  11 | Train: loss=0.913, acc= 69.4% | time=1472.7ms | Valid: loss=1.052, acc= 62.8% |
+Train 1: (2320, 47913)
+Epoch  12 | Train: loss=0.868, acc= 71.3% | time=2492.3ms | Valid: loss=1.030, acc= 66.0% | *
+Train 1: (2320, 47913)
+Epoch  13 | Train: loss=0.864, acc= 71.1% | time=3037.7ms | Valid: loss=1.017, acc= 66.8% | *
+Train 1: (2320, 47913)
+Epoch  14 | Train: loss=0.810, acc= 73.3% | time=1246.4ms | Valid: loss=0.985, acc= 64.4% | *
+Train 1: (2320, 47913)
+Epoch  15 | Train: loss=0.804, acc= 72.5% | time=2741.1ms | Valid: loss=0.967, acc= 70.0% | *
+Train 1: (2320, 47913)
+Epoch  16 | Train: loss=0.779, acc= 73.7% | time=852.1ms | Valid: loss=0.982, acc= 66.4% |
+Train 1: (2320, 47913)
+Epoch  17 | Train: loss=0.727, acc= 75.1% | time=2175.7ms | Valid: loss=0.934, acc= 70.8% | *
+Train 1: (2320, 47913)
+Epoch  18 | Train: loss=0.737, acc= 75.0% | time=2921.2ms | Valid: loss=0.972, acc= 69.6% |
+Train 1: (2320, 47913)
+Epoch  19 | Train: loss=0.720, acc= 75.9% | time=1860.9ms | Valid: loss=1.017, acc= 65.2% |
+Train 1: (2320, 47913)
+Epoch  20 | Train: loss=0.683, acc= 76.8% | time=2804.1ms | Valid: loss=0.992, acc= 69.6% |
+Train 1: (2320, 47913)
+Epoch  21 | Train: loss=0.655, acc= 78.0% | time=1194.7ms | Valid: loss=1.033, acc= 68.0% |
+Train 1: (2320, 47913)
+Epoch  22 | Train: loss=0.679, acc= 77.4% | time=2796.1ms | Valid: loss=0.997, acc= 67.2% |
+Train 1: (2320, 47913)
+Epoch  23 | Train: loss=0.605, acc= 79.3% | time=933.5ms | Valid: loss=0.989, acc= 71.2% | lr=5.0e-03
+Train 1: (2344, 47937)
+Epoch  24 | Train: loss=0.595, acc= 79.9% | time=2581.9ms | Valid: loss=0.980, acc= 70.0% |
+Train 1: (2320, 47913)
+Epoch  25 | Train: loss=0.594, acc= 80.4% | time=736.6ms | Valid: loss=0.958, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  26 | Train: loss=0.579, acc= 80.6% | time=1879.9ms | Valid: loss=0.956, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  27 | Train: loss=0.570, acc= 81.0% | time=2834.6ms | Valid: loss=0.948, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  28 | Train: loss=0.563, acc= 81.2% | time=1237.0ms | Valid: loss=0.946, acc= 70.4% |
+Train 1: (2320, 47913)
+Epoch  29 | Train: loss=0.564, acc= 81.5% | time=2591.6ms | Valid: loss=0.942, acc= 71.6% | lr=2.5e-03
+Train 1: (2320, 47913)
+Epoch  30 | Train: loss=0.558, acc= 81.7% | time=1081.0ms | Valid: loss=0.949, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  31 | Train: loss=0.549, acc= 81.8% | time=2598.8ms | Valid: loss=0.945, acc= 69.2% |
+Train 1: (2320, 47913)
+Epoch  32 | Train: loss=0.535, acc= 82.5% | time=1606.7ms | Valid: loss=0.925, acc= 70.0% | *
+Train 1: (2320, 47913)
+Epoch  33 | Train: loss=0.530, acc= 82.4% | time=1437.7ms | Valid: loss=0.936, acc= 72.8% |
+Train 1: (2320, 47913)
+Epoch  34 | Train: loss=0.539, acc= 82.3% | time=1101.8ms | Valid: loss=0.921, acc= 72.4% | *
+Train 1: (2320, 47913)
+Epoch  35 | Train: loss=0.524, acc= 82.3% | time=1218.7ms | Valid: loss=0.934, acc= 69.6% |
+Train 1: (2320, 47913)
+Epoch  36 | Train: loss=0.523, acc= 82.4% | time=1263.3ms | Valid: loss=0.970, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  37 | Train: loss=0.512, acc= 83.4% | time=1307.3ms | Valid: loss=0.945, acc= 70.0% |
+Train 1: (2320, 47913)
+Epoch  38 | Train: loss=0.511, acc= 82.3% | time=1484.9ms | Valid: loss=0.972, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  39 | Train: loss=0.511, acc= 82.5% | time=1311.6ms | Valid: loss=0.968, acc= 70.0% |
+Train 1: (2320, 47913)
+Epoch  40 | Train: loss=0.497, acc= 83.1% | time=1279.3ms | Valid: loss=0.952, acc= 72.0% | lr=1.3e-03
+Train 1: (2320, 47913)
+Epoch  41 | Train: loss=0.497, acc= 83.9% | time=1306.5ms | Valid: loss=0.946, acc= 69.6% |
+Train 1: (2320, 47913)
+Epoch  42 | Train: loss=0.498, acc= 83.4% | time=1259.3ms | Valid: loss=0.955, acc= 72.0% |
+Train 1: (2320, 47913)
+Epoch  43 | Train: loss=0.496, acc= 83.8% | time=1387.6ms | Valid: loss=0.939, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  44 | Train: loss=0.489, acc= 83.4% | time=1153.1ms | Valid: loss=0.975, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  45 | Train: loss=0.493, acc= 83.7% | time=1378.8ms | Valid: loss=0.943, acc= 71.6% |
+Train 1: (2320, 47913)
+Epoch  46 | Train: loss=0.488, acc= 83.9% | time=1180.8ms | Valid: loss=0.940, acc= 70.4% | lr=6.3e-04
+Train 1: (2320, 47913)
+Epoch  47 | Train: loss=0.492, acc= 83.1% | time=1433.2ms | Valid: loss=0.918, acc= 73.2% | *
+Train 1: (2320, 47913)
+Epoch  48 | Train: loss=0.489, acc= 83.7% | time=1281.8ms | Valid: loss=0.939, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  49 | Train: loss=0.486, acc= 84.0% | time=1243.0ms | Valid: loss=0.959, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  50 | Train: loss=0.479, acc= 84.1% | time=1282.0ms | Valid: loss=0.907, acc= 73.2% | *
+Train 1: (2320, 47913)
+Epoch  51 | Train: loss=0.487, acc= 83.7% | time=1285.2ms | Valid: loss=0.942, acc= 69.6% |
+Train 1: (2320, 47913)
+Epoch  52 | Train: loss=0.476, acc= 84.3% | time=1222.8ms | Valid: loss=0.929, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  53 | Train: loss=0.488, acc= 83.7% | time=1292.5ms | Valid: loss=0.935, acc= 69.2% |
+Train 1: (2320, 47913)
+Epoch  54 | Train: loss=0.477, acc= 83.9% | time=1556.7ms | Valid: loss=0.949, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  55 | Train: loss=0.486, acc= 83.8% | time=967.0ms | Valid: loss=0.970, acc= 71.6% |
+Train 1: (2320, 47913)
+Epoch  56 | Train: loss=0.475, acc= 84.4% | time=2832.5ms | Valid: loss=0.949, acc= 68.8% | lr=3.1e-04
+Train 1: (2320, 47913)
+Epoch  57 | Train: loss=0.482, acc= 83.6% | time=1454.0ms | Valid: loss=0.995, acc= 70.0% |
+Train 1: (2320, 47913)
+Epoch  58 | Train: loss=0.480, acc= 84.3% | time=2712.2ms | Valid: loss=0.951, acc= 72.8% |
+Train 1: (2320, 47913)
+Epoch  59 | Train: loss=0.482, acc= 84.1% | time=1020.6ms | Valid: loss=0.922, acc= 71.6% |
+Train 1: (2320, 47913)
+Epoch  60 | Train: loss=0.481, acc= 83.8% | time=2555.6ms | Valid: loss=0.920, acc= 73.2% |
+Train 1: (2320, 47913)
+Epoch  61 | Train: loss=0.468, acc= 84.2% | time=722.5ms | Valid: loss=0.940, acc= 72.4% |
+Train 1: (2320, 47913)
+Epoch  62 | Train: loss=0.473, acc= 84.1% | time=2483.5ms | Valid: loss=0.940, acc= 72.0% | lr=1.6e-04
+Train 1: (2320, 47913)
+Epoch  63 | Train: loss=0.472, acc= 84.4% | time=2530.2ms | Valid: loss=0.917, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  64 | Train: loss=0.477, acc= 84.1% | time=1628.6ms | Valid: loss=0.942, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  65 | Train: loss=0.477, acc= 84.1% | time=2716.0ms | Valid: loss=0.930, acc= 72.0% |
+Train 1: (2320, 47913)
+Epoch  66 | Train: loss=0.470, acc= 84.1% | time=1841.2ms | Valid: loss=0.941, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  67 | Train: loss=0.480, acc= 84.2% | time=2699.5ms | Valid: loss=0.934, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  68 | Train: loss=0.476, acc= 84.2% | time=1119.0ms | Valid: loss=0.922, acc= 70.4% | lr=7.8e-05
+Train 1: (2320, 47913)
+Epoch  69 | Train: loss=0.477, acc= 83.6% | time=2838.6ms | Valid: loss=0.944, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  70 | Train: loss=0.477, acc= 84.3% | time=990.0ms | Valid: loss=0.930, acc= 72.0% |
+Train 1: (2320, 47913)
+Epoch  71 | Train: loss=0.458, acc= 84.3% | time=2530.4ms | Valid: loss=0.913, acc= 72.0% |
+Train 1: (2320, 47913)
+Epoch  72 | Train: loss=0.469, acc= 84.2% | time=1041.8ms | Valid: loss=0.922, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  73 | Train: loss=0.465, acc= 84.6% | time=2890.7ms | Valid: loss=0.948, acc= 72.8% |
+Train 1: (2320, 47913)
+Epoch  74 | Train: loss=0.471, acc= 84.4% | time=1208.0ms | Valid: loss=0.950, acc= 71.6% | lr=3.9e-05
+Train 1: (2320, 47913)
+Epoch  75 | Train: loss=0.470, acc= 84.4% | time=2770.7ms | Valid: loss=0.935, acc= 72.0% |
+Train 1: (2320, 47913)
+Epoch  76 | Train: loss=0.465, acc= 84.2% | time=704.8ms | Valid: loss=0.930, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  77 | Train: loss=0.467, acc= 84.9% | time=2810.6ms | Valid: loss=0.942, acc= 71.2% |
+Train 1: (2320, 47913)
+Epoch  78 | Train: loss=0.470, acc= 84.0% | time=1891.7ms | Valid: loss=0.909, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  79 | Train: loss=0.477, acc= 84.2% | time=2825.4ms | Valid: loss=0.950, acc= 71.6% |
+Train 1: (2320, 47913)
+Epoch  80 | Train: loss=0.467, acc= 84.5% | time=1882.9ms | Valid: loss=0.939, acc= 71.2% | lr=2.0e-05
+Train 1: (2320, 47913)
+Epoch  81 | Train: loss=0.474, acc= 84.5% | time=2908.3ms | Valid: loss=0.928, acc= 71.6% |
+Train 1: (2320, 47913)
+Epoch  82 | Train: loss=0.472, acc= 84.7% | time=1739.3ms | Valid: loss=0.909, acc= 72.4% |
+Train 1: (2320, 47913)
+Epoch  83 | Train: loss=0.472, acc= 84.3% | time=2361.7ms | Valid: loss=0.918, acc= 70.4% |
+Train 1: (2320, 47913)
+Epoch  84 | Train: loss=0.470, acc= 84.2% | time=2656.3ms | Valid: loss=0.975, acc= 68.8% |
+Train 1: (2320, 47913)
+Epoch  85 | Train: loss=0.467, acc= 84.9% | time=1830.1ms | Valid: loss=0.982, acc= 70.8% |
+Train 1: (2320, 47913)
+Epoch  86 | Train: loss=0.470, acc= 84.2% | time=2815.0ms | Valid: loss=0.956, acc= 71.2% | lr=9.8e-06
+Test: loss=1.078 , acc= 66.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.973 0.973 0.973 0.973 0.973]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 11/48
+Layer 2 : 160/576
+Layer 3 : 270/512
+Layer 4 : 157/1024
+Layer 5 : 196/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  2 (cifar100-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 2: (7248, 52841)
+Epoch   1 | Train: loss=1.257, acc= 58.5% | time=1236.7ms | Valid: loss=1.286, acc= 58.4% | *
+Train 2: (2320, 47913)
+Epoch   2 | Train: loss=1.138, acc= 61.8% | time=2810.1ms | Valid: loss=1.208, acc= 62.8% | *
+Train 2: (2320, 47913)
+Epoch   3 | Train: loss=1.066, acc= 64.3% | time=876.3ms | Valid: loss=1.155, acc= 66.0% | *
+Train 2: (2320, 47913)
+Epoch   4 | Train: loss=1.010, acc= 66.3% | time=2773.9ms | Valid: loss=1.050, acc= 66.8% | *
+Train 2: (2320, 47913)
+Epoch   5 | Train: loss=0.969, acc= 67.8% | time=768.1ms | Valid: loss=1.064, acc= 66.8% |
+Train 2: (2320, 47913)
+Epoch   6 | Train: loss=0.910, acc= 69.9% | time=2588.1ms | Valid: loss=1.078, acc= 64.8% |
+Train 2: (2320, 47913)
+Epoch   7 | Train: loss=0.897, acc= 69.9% | time=1378.7ms | Valid: loss=1.061, acc= 66.0% |
+Train 2: (2320, 47913)
+Epoch   8 | Train: loss=0.871, acc= 70.8% | time=2972.8ms | Valid: loss=1.020, acc= 68.8% | *
+Train 2: (2320, 47913)
+Epoch   9 | Train: loss=0.836, acc= 72.0% | time=1464.1ms | Valid: loss=1.066, acc= 65.2% |
+Train 2: (2320, 47913)
+Epoch  10 | Train: loss=0.784, acc= 74.2% | time=2502.3ms | Valid: loss=0.962, acc= 68.8% | *
+Train 2: (2320, 47913)
+Epoch  11 | Train: loss=0.780, acc= 73.8% | time=2478.3ms | Valid: loss=1.037, acc= 65.6% |
+Train 2: (2320, 47913)
+Epoch  12 | Train: loss=0.738, acc= 75.5% | time=1692.2ms | Valid: loss=0.965, acc= 67.2% |
+Train 2: (2320, 47913)
+Epoch  13 | Train: loss=0.714, acc= 76.4% | time=2922.1ms | Valid: loss=0.985, acc= 66.0% |
+Train 2: (2320, 47913)
+Epoch  14 | Train: loss=0.715, acc= 76.1% | time=1206.9ms | Valid: loss=0.978, acc= 68.0% |
+Train 2: (2320, 47913)
+Epoch  15 | Train: loss=0.684, acc= 77.2% | time=3002.6ms | Valid: loss=0.981, acc= 68.8% |
+Train 2: (2320, 47913)
+Epoch  16 | Train: loss=0.660, acc= 78.0% | time=766.9ms | Valid: loss=0.988, acc= 66.8% | lr=5.0e-03
+Train 2: (2320, 47913)
+Epoch  17 | Train: loss=0.653, acc= 78.0% | time=2923.5ms | Valid: loss=0.971, acc= 67.6% |
+Train 2: (2320, 47913)
+Epoch  18 | Train: loss=0.643, acc= 78.8% | time=921.1ms | Valid: loss=0.985, acc= 68.4% |
+Train 2: (2320, 47913)
+Epoch  19 | Train: loss=0.636, acc= 79.0% | time=2776.5ms | Valid: loss=0.930, acc= 69.2% | *
+Train 2: (2320, 47913)
+Epoch  20 | Train: loss=0.622, acc= 78.9% | time=2267.5ms | Valid: loss=0.952, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  21 | Train: loss=0.607, acc= 79.6% | time=1333.3ms | Valid: loss=0.936, acc= 68.8% |
+Train 2: (2320, 47913)
+Epoch  22 | Train: loss=0.597, acc= 80.1% | time=2800.3ms | Valid: loss=0.954, acc= 69.2% |
+Train 2: (2320, 47913)
+Epoch  23 | Train: loss=0.587, acc= 80.0% | time=1508.1ms | Valid: loss=0.906, acc= 72.8% | *
+Train 2: (2320, 47913)
+Epoch  24 | Train: loss=0.590, acc= 80.3% | time=2587.4ms | Valid: loss=0.955, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  25 | Train: loss=0.579, acc= 80.8% | time=861.4ms | Valid: loss=0.910, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  26 | Train: loss=0.577, acc= 80.8% | time=2637.2ms | Valid: loss=0.906, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  27 | Train: loss=0.576, acc= 80.9% | time=1061.3ms | Valid: loss=0.907, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  28 | Train: loss=0.558, acc= 81.2% | time=2808.5ms | Valid: loss=0.931, acc= 71.2% |
+Train 2: (2320, 47913)
+Epoch  29 | Train: loss=0.539, acc= 81.4% | time=1013.7ms | Valid: loss=0.934, acc= 69.2% | lr=2.5e-03
+Train 2: (2320, 47913)
+Epoch  30 | Train: loss=0.540, acc= 81.9% | time=2705.3ms | Valid: loss=0.926, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  31 | Train: loss=0.538, acc= 82.1% | time=1188.7ms | Valid: loss=0.918, acc= 68.8% |
+Train 2: (2320, 47913)
+Epoch  32 | Train: loss=0.528, acc= 82.1% | time=2271.2ms | Valid: loss=0.933, acc= 71.6% |
+Train 2: (2320, 47913)
+Epoch  33 | Train: loss=0.525, acc= 82.8% | time=2617.5ms | Valid: loss=0.988, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  34 | Train: loss=0.527, acc= 82.4% | time=2091.6ms | Valid: loss=0.908, acc= 73.2% |
+Train 2: (2320, 47913)
+Epoch  35 | Train: loss=0.522, acc= 82.7% | time=2728.4ms | Valid: loss=0.930, acc= 70.8% | lr=1.3e-03
+Train 2: (2320, 47913)
+Epoch  36 | Train: loss=0.527, acc= 82.4% | time=1540.8ms | Valid: loss=0.951, acc= 68.8% |
+Train 2: (2320, 47913)
+Epoch  37 | Train: loss=0.516, acc= 82.4% | time=2698.1ms | Valid: loss=0.913, acc= 70.4% |
+Train 2: (2320, 47913)
+Epoch  38 | Train: loss=0.511, acc= 82.7% | time=938.5ms | Valid: loss=0.931, acc= 70.0% |
+Train 2: (2320, 47913)
+Epoch  39 | Train: loss=0.512, acc= 82.8% | time=2563.8ms | Valid: loss=0.938, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  40 | Train: loss=0.508, acc= 82.7% | time=785.1ms | Valid: loss=0.893, acc= 71.6% | *
+Train 2: (2320, 47913)
+Epoch  41 | Train: loss=0.511, acc= 82.7% | time=2777.5ms | Valid: loss=0.916, acc= 69.2% |
+Train 2: (2320, 47913)
+Epoch  42 | Train: loss=0.511, acc= 82.5% | time=983.7ms | Valid: loss=0.878, acc= 71.6% | *
+Train 2: (2320, 47913)
+Epoch  43 | Train: loss=0.499, acc= 83.1% | time=2954.4ms | Valid: loss=0.916, acc= 71.6% |
+Train 2: (2320, 47913)
+Epoch  44 | Train: loss=0.497, acc= 83.2% | time=1027.1ms | Valid: loss=0.891, acc= 70.4% |
+Train 2: (2320, 47913)
+Epoch  45 | Train: loss=0.502, acc= 83.6% | time=2696.6ms | Valid: loss=0.910, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  46 | Train: loss=0.494, acc= 83.5% | time=1309.3ms | Valid: loss=0.932, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  47 | Train: loss=0.498, acc= 83.2% | time=2463.0ms | Valid: loss=0.929, acc= 70.0% |
+Train 2: (2320, 47913)
+Epoch  48 | Train: loss=0.494, acc= 83.3% | time=2538.8ms | Valid: loss=0.937, acc= 70.4% | lr=6.3e-04
+Train 2: (2320, 47913)
+Epoch  49 | Train: loss=0.502, acc= 83.1% | time=1119.5ms | Valid: loss=0.900, acc= 71.6% |
+Train 2: (2320, 47913)
+Epoch  50 | Train: loss=0.495, acc= 83.1% | time=2530.9ms | Valid: loss=0.920, acc= 71.2% |
+Train 2: (2320, 47913)
+Epoch  51 | Train: loss=0.500, acc= 83.5% | time=1054.2ms | Valid: loss=0.892, acc= 70.0% |
+Train 2: (2320, 47913)
+Epoch  52 | Train: loss=0.495, acc= 83.6% | time=2725.6ms | Valid: loss=0.937, acc= 72.4% |
+Train 2: (2320, 47913)
+Epoch  53 | Train: loss=0.497, acc= 83.3% | time=1118.3ms | Valid: loss=0.923, acc= 70.8% |
+Train 2: (2320, 47913)
+Epoch  54 | Train: loss=0.492, acc= 83.2% | time=2661.7ms | Valid: loss=0.923, acc= 68.8% | lr=3.1e-04
+Train 2: (2320, 47913)
+Epoch  55 | Train: loss=0.489, acc= 83.4% | time=2184.5ms | Valid: loss=0.919, acc= 68.8% |
+Train 2: (2320, 47913)
+Epoch  56 | Train: loss=0.493, acc= 83.6% | time=2891.0ms | Valid: loss=0.906, acc= 71.2% |
+Train 2: (2320, 47913)
+Epoch  57 | Train: loss=0.497, acc= 83.5% | time=1490.6ms | Valid: loss=0.948, acc= 71.6% |
+Train 2: (2320, 47913)
+Epoch  58 | Train: loss=0.489, acc= 83.7% | time=2873.7ms | Valid: loss=0.896, acc= 69.2% |
+Train 2: (2320, 47913)
+Epoch  59 | Train: loss=0.494, acc= 83.7% | time=2344.4ms | Valid: loss=0.931, acc= 70.4% |
+Train 2: (2320, 47913)
+Epoch  60 | Train: loss=0.488, acc= 83.5% | time=1649.3ms | Valid: loss=0.906, acc= 72.4% | lr=1.6e-04
+Train 2: (2320, 47913)
+Epoch  61 | Train: loss=0.487, acc= 84.0% | time=2627.9ms | Valid: loss=0.929, acc= 70.4% |
+Train 2: (2320, 47913)
+Epoch  62 | Train: loss=0.495, acc= 83.3% | time=919.5ms | Valid: loss=0.936, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  63 | Train: loss=0.491, acc= 83.5% | time=2617.2ms | Valid: loss=0.922, acc= 70.8% |
+Train 2: (2320, 47913)
+Epoch  64 | Train: loss=0.495, acc= 83.4% | time=677.1ms | Valid: loss=0.896, acc= 71.2% |
+Train 2: (2320, 47913)
+Epoch  65 | Train: loss=0.488, acc= 83.7% | time=2746.4ms | Valid: loss=0.876, acc= 71.6% | *
+Train 2: (2320, 47913)
+Epoch  66 | Train: loss=0.490, acc= 83.6% | time=2135.0ms | Valid: loss=0.901, acc= 69.2% |
+Train 2: (2320, 47913)
+Epoch  67 | Train: loss=0.489, acc= 83.9% | time=1378.3ms | Valid: loss=0.919, acc= 71.6% |
+Train 2: (2320, 47913)
+Epoch  68 | Train: loss=0.486, acc= 83.6% | time=2724.7ms | Valid: loss=0.913, acc= 69.2% |
+Train 2: (2320, 47913)
+Epoch  69 | Train: loss=0.478, acc= 84.1% | time=1232.1ms | Valid: loss=0.948, acc= 70.0% |
+Train 2: (2320, 47913)
+Epoch  70 | Train: loss=0.485, acc= 83.7% | time=2508.4ms | Valid: loss=0.894, acc= 71.6% |
+Train 2: (2320, 47913)
+Epoch  71 | Train: loss=0.489, acc= 83.8% | time=884.5ms | Valid: loss=0.912, acc= 70.4% | lr=7.8e-05
+Train 2: (2320, 47913)
+Epoch  72 | Train: loss=0.492, acc= 83.6% | time=2465.9ms | Valid: loss=0.876, acc= 73.2% | *
+Train 2: (2320, 47913)
+Epoch  73 | Train: loss=0.487, acc= 83.5% | time=2312.7ms | Valid: loss=0.893, acc= 72.8% |
+Train 2: (2320, 47913)
+Epoch  74 | Train: loss=0.487, acc= 83.4% | time=1665.1ms | Valid: loss=0.925, acc= 70.8% |
+Train 2: (2320, 47913)
+Epoch  75 | Train: loss=0.489, acc= 83.4% | time=2851.3ms | Valid: loss=0.913, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  76 | Train: loss=0.495, acc= 83.1% | time=1266.2ms | Valid: loss=0.931, acc= 70.0% |
+Train 2: (2320, 47913)
+Epoch  77 | Train: loss=0.486, acc= 83.6% | time=2456.2ms | Valid: loss=0.905, acc= 70.0% |
+Train 2: (2320, 47913)
+Epoch  78 | Train: loss=0.487, acc= 83.7% | time=926.6ms | Valid: loss=0.894, acc= 70.8% | lr=3.9e-05
+Train 2: (2320, 47913)
+Epoch  79 | Train: loss=0.487, acc= 83.6% | time=3174.4ms | Valid: loss=0.894, acc= 70.8% |
+Train 2: (2320, 47913)
+Epoch  80 | Train: loss=0.492, acc= 83.3% | time=851.7ms | Valid: loss=0.921, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  81 | Train: loss=0.480, acc= 84.0% | time=2815.4ms | Valid: loss=0.923, acc= 68.8% |
+Train 2: (2320, 47913)
+Epoch  82 | Train: loss=0.491, acc= 83.3% | time=1394.3ms | Valid: loss=0.897, acc= 73.2% |
+Train 2: (2320, 47913)
+Epoch  83 | Train: loss=0.493, acc= 82.9% | time=2475.6ms | Valid: loss=0.887, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  84 | Train: loss=0.486, acc= 84.0% | time=2685.1ms | Valid: loss=0.905, acc= 71.6% | lr=2.0e-05
+Train 2: (2320, 47913)
+Epoch  85 | Train: loss=0.492, acc= 83.4% | time=1194.1ms | Valid: loss=0.917, acc= 71.2% |
+Train 2: (2320, 47913)
+Epoch  86 | Train: loss=0.481, acc= 84.0% | time=2807.1ms | Valid: loss=0.907, acc= 69.6% |
+Train 2: (2320, 47913)
+Epoch  87 | Train: loss=0.489, acc= 83.8% | time=731.6ms | Valid: loss=0.885, acc= 72.0% |
+Train 2: (2320, 47913)
+Epoch  88 | Train: loss=0.490, acc= 83.1% | time=2696.1ms | Valid: loss=0.931, acc= 69.2% |
+Train 2: (2320, 47913)
+Epoch  89 | Train: loss=0.488, acc= 83.7% | time=1674.6ms | Valid: loss=0.930, acc= 72.8% |
+Train 2: (2320, 47913)
+Epoch  90 | Train: loss=0.486, acc= 83.6% | time=2279.3ms | Valid: loss=0.921, acc= 71.2% | lr=9.8e-06
+Test: loss=0.933 , acc= 71.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.976 0.976 0.976 0.976 0.976]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 11/48
+Layer 2 : 178/576
+Layer 3 : 300/512
+Layer 4 : 229/1024
+Layer 5 : 291/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  3 (cifar100-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 3: (6608, 52201)
+Epoch   1 | Train: loss=1.381, acc= 52.9% | time=2332.2ms | Valid: loss=1.412, acc= 53.6% | *
+Train 3: (2320, 47913)
+Epoch   2 | Train: loss=1.234, acc= 58.3% | time=2768.8ms | Valid: loss=1.296, acc= 56.4% | *
+Train 3: (2320, 47913)
+Epoch   3 | Train: loss=1.201, acc= 59.1% | time=1970.4ms | Valid: loss=1.248, acc= 56.8% | *
+Train 3: (2320, 47913)
+Epoch   4 | Train: loss=1.144, acc= 61.2% | time=2837.6ms | Valid: loss=1.215, acc= 58.4% | *
+Train 3: (2320, 47913)
+Epoch   5 | Train: loss=1.101, acc= 62.4% | time=898.2ms | Valid: loss=1.163, acc= 61.6% | *
+Train 3: (2320, 47913)
+Epoch   6 | Train: loss=1.053, acc= 64.1% | time=2707.2ms | Valid: loss=1.107, acc= 60.4% | *
+Train 3: (2320, 47913)
+Epoch   7 | Train: loss=1.005, acc= 65.9% | time=1181.7ms | Valid: loss=1.103, acc= 62.8% | *
+Train 3: (2320, 47913)
+Epoch   8 | Train: loss=0.980, acc= 66.8% | time=1355.3ms | Valid: loss=1.088, acc= 60.8% | *
+Train 3: (2320, 47913)
+Epoch   9 | Train: loss=0.953, acc= 67.7% | time=1392.6ms | Valid: loss=1.067, acc= 66.4% | *
+Train 3: (2320, 47913)
+Epoch  10 | Train: loss=0.910, acc= 69.5% | time=1260.4ms | Valid: loss=1.022, acc= 66.4% | *
+Train 3: (2320, 47913)
+Epoch  11 | Train: loss=0.893, acc= 70.2% | time=1180.2ms | Valid: loss=1.074, acc= 65.2% |
+Train 3: (2320, 47913)
+Epoch  12 | Train: loss=0.874, acc= 70.3% | time=1357.3ms | Valid: loss=1.033, acc= 64.0% |
+Train 3: (2320, 47913)
+Epoch  13 | Train: loss=0.849, acc= 71.4% | time=1152.6ms | Valid: loss=1.018, acc= 64.8% | *
+Train 3: (2320, 47913)
+Epoch  14 | Train: loss=0.821, acc= 72.3% | time=1554.8ms | Valid: loss=0.992, acc= 67.6% | *
+Train 3: (2320, 47913)
+Epoch  15 | Train: loss=0.816, acc= 72.6% | time=1182.9ms | Valid: loss=1.031, acc= 66.0% |
+Train 3: (2320, 47913)
+Epoch  16 | Train: loss=0.774, acc= 74.5% | time=1364.3ms | Valid: loss=0.992, acc= 68.0% |
+Train 3: (2320, 47913)
+Epoch  17 | Train: loss=0.766, acc= 74.0% | time=1109.3ms | Valid: loss=0.972, acc= 67.6% | *
+Train 3: (2320, 47913)
+Epoch  18 | Train: loss=0.757, acc= 74.9% | time=1311.0ms | Valid: loss=0.999, acc= 69.2% |
+Train 3: (2320, 47913)
+Epoch  19 | Train: loss=0.729, acc= 75.9% | time=1111.4ms | Valid: loss=0.987, acc= 67.6% |
+Train 3: (2320, 47913)
+Epoch  20 | Train: loss=0.717, acc= 75.3% | time=1443.6ms | Valid: loss=1.020, acc= 68.8% |
+Train 3: (2320, 47913)
+Epoch  21 | Train: loss=0.676, acc= 77.7% | time=1143.6ms | Valid: loss=0.970, acc= 72.0% | *
+Train 3: (2320, 47913)
+Epoch  22 | Train: loss=0.725, acc= 76.2% | time=1509.7ms | Valid: loss=1.014, acc= 67.6% |
+Train 3: (2320, 47913)
+Epoch  23 | Train: loss=0.653, acc= 78.3% | time=1443.9ms | Valid: loss=0.979, acc= 70.8% |
+Train 3: (2320, 47913)
+Epoch  24 | Train: loss=0.631, acc= 79.4% | time=1323.5ms | Valid: loss=0.963, acc= 72.0% | *
+Train 3: (2320, 47913)
+Epoch  25 | Train: loss=0.619, acc= 79.4% | time=1238.5ms | Valid: loss=0.959, acc= 70.8% | *
+Train 3: (2320, 47913)
+Epoch  26 | Train: loss=0.652, acc= 78.2% | time=1440.3ms | Valid: loss=0.971, acc= 69.2% |
+Train 3: (2320, 47913)
+Epoch  27 | Train: loss=0.628, acc= 79.0% | time=1263.9ms | Valid: loss=0.966, acc= 69.6% |
+Train 3: (2320, 47913)
+Epoch  28 | Train: loss=0.583, acc= 81.0% | time=1401.2ms | Valid: loss=0.941, acc= 72.4% | *
+Train 3: (2320, 47913)
+Epoch  29 | Train: loss=0.585, acc= 80.5% | time=1793.7ms | Valid: loss=0.940, acc= 73.6% | *
+Train 3: (2320, 47913)
+Epoch  30 | Train: loss=0.559, acc= 81.1% | time=1251.8ms | Valid: loss=0.970, acc= 68.8% |
+Train 3: (2320, 47913)
+Epoch  31 | Train: loss=0.551, acc= 81.2% | time=2745.1ms | Valid: loss=0.952, acc= 70.4% |
+Train 3: (2320, 47913)
+Epoch  32 | Train: loss=0.537, acc= 81.6% | time=882.6ms | Valid: loss=0.954, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  33 | Train: loss=0.534, acc= 82.1% | time=2677.6ms | Valid: loss=0.944, acc= 70.8% |
+Train 3: (2320, 47913)
+Epoch  34 | Train: loss=0.536, acc= 81.8% | time=2085.1ms | Valid: loss=0.982, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  35 | Train: loss=0.501, acc= 83.4% | time=1626.8ms | Valid: loss=0.891, acc= 70.8% | *
+Train 3: (2320, 47913)
+Epoch  36 | Train: loss=0.490, acc= 83.8% | time=2824.8ms | Valid: loss=0.939, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch  37 | Train: loss=0.494, acc= 83.7% | time=1214.3ms | Valid: loss=0.964, acc= 70.4% |
+Train 3: (2320, 47913)
+Epoch  38 | Train: loss=0.463, acc= 84.7% | time=2819.5ms | Valid: loss=0.958, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  39 | Train: loss=0.460, acc= 84.7% | time=1124.1ms | Valid: loss=0.958, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  40 | Train: loss=0.439, acc= 85.6% | time=2724.5ms | Valid: loss=0.923, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  41 | Train: loss=0.422, acc= 86.4% | time=1185.4ms | Valid: loss=0.935, acc= 70.4% | lr=5.0e-03
+Train 3: (2320, 47913)
+Epoch  42 | Train: loss=0.438, acc= 85.3% | time=2471.4ms | Valid: loss=0.938, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  43 | Train: loss=0.423, acc= 86.0% | time=986.5ms | Valid: loss=0.979, acc= 70.8% |
+Train 3: (2320, 47913)
+Epoch  44 | Train: loss=0.411, acc= 86.3% | time=2525.9ms | Valid: loss=0.890, acc= 74.0% | *
+Train 3: (2320, 47913)
+Epoch  45 | Train: loss=0.416, acc= 86.5% | time=1134.8ms | Valid: loss=0.935, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  46 | Train: loss=0.411, acc= 86.2% | time=2816.2ms | Valid: loss=0.948, acc= 70.0% |
+Train 3: (2320, 47913)
+Epoch  47 | Train: loss=0.400, acc= 86.8% | time=1144.0ms | Valid: loss=0.903, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch  48 | Train: loss=0.398, acc= 86.9% | time=2754.6ms | Valid: loss=0.940, acc= 72.8% |
+Train 3: (2320, 47913)
+Epoch  49 | Train: loss=0.383, acc= 87.1% | time=899.8ms | Valid: loss=0.910, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  50 | Train: loss=0.375, acc= 87.6% | time=2646.7ms | Valid: loss=0.920, acc= 72.8% | lr=2.5e-03
+Train 3: (2320, 47913)
+Epoch  51 | Train: loss=0.370, acc= 87.9% | time=1476.8ms | Valid: loss=0.896, acc= 72.8% |
+Train 3: (2320, 47913)
+Epoch  52 | Train: loss=0.374, acc= 88.1% | time=2740.7ms | Valid: loss=0.933, acc= 70.8% |
+Train 3: (2320, 47913)
+Epoch  53 | Train: loss=0.379, acc= 87.4% | time=1145.3ms | Valid: loss=0.928, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch  54 | Train: loss=0.373, acc= 87.8% | time=3012.3ms | Valid: loss=0.888, acc= 72.8% | *
+Train 3: (2320, 47913)
+Epoch  55 | Train: loss=0.373, acc= 87.6% | time=1155.5ms | Valid: loss=0.907, acc= 72.8% |
+Train 3: (2320, 47913)
+Epoch  56 | Train: loss=0.374, acc= 87.9% | time=2532.6ms | Valid: loss=0.913, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  57 | Train: loss=0.367, acc= 87.7% | time=1043.0ms | Valid: loss=0.948, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  58 | Train: loss=0.357, acc= 88.1% | time=2598.6ms | Valid: loss=0.982, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  59 | Train: loss=0.356, acc= 88.4% | time=958.0ms | Valid: loss=0.922, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  60 | Train: loss=0.358, acc= 88.3% | time=2968.7ms | Valid: loss=0.968, acc= 70.4% | lr=1.3e-03
+Train 3: (2320, 47913)
+Epoch  61 | Train: loss=0.357, acc= 88.5% | time=870.6ms | Valid: loss=0.911, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  62 | Train: loss=0.357, acc= 88.7% | time=2953.1ms | Valid: loss=0.918, acc= 74.0% |
+Train 3: (2320, 47913)
+Epoch  63 | Train: loss=0.357, acc= 88.4% | time=2147.3ms | Valid: loss=0.903, acc= 73.2% |
+Train 3: (2320, 47913)
+Epoch  64 | Train: loss=0.356, acc= 88.4% | time=1824.7ms | Valid: loss=0.920, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  65 | Train: loss=0.358, acc= 88.4% | time=3083.4ms | Valid: loss=0.923, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  66 | Train: loss=0.352, acc= 88.5% | time=1860.7ms | Valid: loss=0.947, acc= 73.6% | lr=6.3e-04
+Train 3: (2320, 47913)
+Epoch  67 | Train: loss=0.344, acc= 88.9% | time=2954.7ms | Valid: loss=0.939, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  68 | Train: loss=0.350, acc= 88.7% | time=1358.4ms | Valid: loss=0.905, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  69 | Train: loss=0.353, acc= 88.2% | time=2667.5ms | Valid: loss=0.943, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  70 | Train: loss=0.345, acc= 89.1% | time=872.9ms | Valid: loss=0.944, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  71 | Train: loss=0.350, acc= 88.4% | time=2679.1ms | Valid: loss=0.914, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch  72 | Train: loss=0.348, acc= 88.6% | time=1244.3ms | Valid: loss=0.982, acc= 69.2% | lr=3.1e-04
+Train 3: (2320, 47913)
+Epoch  73 | Train: loss=0.347, acc= 88.4% | time=2900.1ms | Valid: loss=0.956, acc= 72.8% |
+Train 3: (2320, 47913)
+Epoch  74 | Train: loss=0.343, acc= 88.8% | time=1872.8ms | Valid: loss=0.917, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  75 | Train: loss=0.345, acc= 89.1% | time=1581.5ms | Valid: loss=0.987, acc= 70.4% |
+Train 3: (2320, 47913)
+Epoch  76 | Train: loss=0.339, acc= 88.9% | time=2659.9ms | Valid: loss=0.884, acc= 74.8% | *
+Train 3: (2320, 47913)
+Epoch  77 | Train: loss=0.349, acc= 88.8% | time=910.4ms | Valid: loss=0.910, acc= 71.6% |
+Train 3: (2320, 47913)
+Epoch  78 | Train: loss=0.347, acc= 88.9% | time=2666.2ms | Valid: loss=0.927, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch  79 | Train: loss=0.349, acc= 88.7% | time=1220.1ms | Valid: loss=0.907, acc= 74.8% |
+Train 3: (2320, 47913)
+Epoch  80 | Train: loss=0.347, acc= 88.9% | time=2673.7ms | Valid: loss=0.959, acc= 73.2% |
+Train 3: (2320, 47913)
+Epoch  81 | Train: loss=0.343, acc= 89.2% | time=1539.5ms | Valid: loss=0.870, acc= 72.4% | *
+Train 3: (2320, 47913)
+Epoch  82 | Train: loss=0.344, acc= 88.8% | time=2784.6ms | Valid: loss=0.905, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  83 | Train: loss=0.339, acc= 89.1% | time=1336.5ms | Valid: loss=1.026, acc= 68.8% |
+Train 3: (2320, 47913)
+Epoch  84 | Train: loss=0.342, acc= 88.7% | time=2513.7ms | Valid: loss=0.921, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  85 | Train: loss=0.344, acc= 89.0% | time=1866.8ms | Valid: loss=0.916, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  86 | Train: loss=0.339, acc= 89.0% | time=2902.0ms | Valid: loss=0.958, acc= 72.8% |
+Train 3: (2320, 47913)
+Epoch  87 | Train: loss=0.350, acc= 88.6% | time=1177.0ms | Valid: loss=0.950, acc= 73.2% | lr=1.6e-04
+Train 3: (2320, 47913)
+Epoch  88 | Train: loss=0.339, acc= 89.0% | time=2655.3ms | Valid: loss=0.897, acc= 75.2% |
+Train 3: (2320, 47913)
+Epoch  89 | Train: loss=0.342, acc= 88.8% | time=966.7ms | Valid: loss=0.952, acc= 70.4% |
+Train 3: (2320, 47913)
+Epoch  90 | Train: loss=0.341, acc= 88.6% | time=2710.4ms | Valid: loss=0.966, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch  91 | Train: loss=0.347, acc= 88.4% | time=633.4ms | Valid: loss=0.906, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  92 | Train: loss=0.346, acc= 88.8% | time=2512.6ms | Valid: loss=0.949, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  93 | Train: loss=0.348, acc= 88.9% | time=1219.0ms | Valid: loss=0.930, acc= 72.4% | lr=7.8e-05
+Train 3: (2320, 47913)
+Epoch  94 | Train: loss=0.335, acc= 89.4% | time=1700.6ms | Valid: loss=0.939, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch  95 | Train: loss=0.345, acc= 89.1% | time=2840.1ms | Valid: loss=0.957, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  96 | Train: loss=0.341, acc= 88.5% | time=1375.1ms | Valid: loss=0.914, acc= 70.8% |
+Train 3: (2320, 47913)
+Epoch  97 | Train: loss=0.336, acc= 89.1% | time=3052.7ms | Valid: loss=0.919, acc= 73.2% |
+Train 3: (2320, 47913)
+Epoch  98 | Train: loss=0.341, acc= 88.7% | time=1249.3ms | Valid: loss=0.907, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch  99 | Train: loss=0.339, acc= 89.1% | time=2895.5ms | Valid: loss=0.897, acc= 73.2% | lr=3.9e-05
+Train 3: (2320, 47913)
+Epoch 100 | Train: loss=0.342, acc= 88.9% | time=1225.5ms | Valid: loss=0.923, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch 101 | Train: loss=0.349, acc= 88.7% | time=2614.9ms | Valid: loss=0.926, acc= 73.2% |
+Train 3: (2320, 47913)
+Epoch 102 | Train: loss=0.343, acc= 88.3% | time=1288.7ms | Valid: loss=0.929, acc= 72.8% |
+Train 3: (2320, 47913)
+Epoch 103 | Train: loss=0.344, acc= 88.9% | time=2859.9ms | Valid: loss=0.938, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch 104 | Train: loss=0.339, acc= 88.9% | time=1215.6ms | Valid: loss=0.913, acc= 74.0% |
+Train 3: (2320, 47913)
+Epoch 105 | Train: loss=0.340, acc= 88.7% | time=2858.8ms | Valid: loss=0.923, acc= 74.4% | lr=2.0e-05
+Train 3: (2320, 47913)
+Epoch 106 | Train: loss=0.337, acc= 89.1% | time=958.0ms | Valid: loss=1.025, acc= 69.6% |
+Train 3: (2320, 47913)
+Epoch 107 | Train: loss=0.344, acc= 88.7% | time=2617.9ms | Valid: loss=0.903, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch 108 | Train: loss=0.339, acc= 88.8% | time=809.3ms | Valid: loss=0.932, acc= 72.4% |
+Train 3: (2320, 47913)
+Epoch 109 | Train: loss=0.340, acc= 89.1% | time=2407.9ms | Valid: loss=0.937, acc= 71.2% |
+Train 3: (2320, 47913)
+Epoch 110 | Train: loss=0.339, acc= 89.1% | time=2420.8ms | Valid: loss=0.949, acc= 72.0% |
+Train 3: (2320, 47913)
+Epoch 111 | Train: loss=0.349, acc= 88.5% | time=1513.2ms | Valid: loss=0.896, acc= 72.0% | lr=9.8e-06
+Test: loss=0.962 , acc= 70.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.979 0.979 0.979 0.979 0.979]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 11/48
+Layer 2 : 202/576
+Layer 3 : 325/512
+Layer 4 : 303/1024
+Layer 5 : 390/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  4 (cifar100-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 4: (6608, 52201)
+Epoch   1 | Train: loss=1.191, acc= 60.6% | time=2407.2ms | Valid: loss=1.242, acc= 59.2% | *
+Train 4: (2320, 47913)
+Epoch   2 | Train: loss=1.055, acc= 65.5% | time=2765.1ms | Valid: loss=1.144, acc= 62.0% | *
+Train 4: (2320, 47913)
+Epoch   3 | Train: loss=0.989, acc= 67.0% | time=1118.8ms | Valid: loss=1.057, acc= 64.0% | *
+Train 4: (2320, 47913)
+Epoch   4 | Train: loss=0.942, acc= 68.5% | time=2717.2ms | Valid: loss=1.047, acc= 62.4% | *
+Train 4: (2320, 47913)
+Epoch   5 | Train: loss=0.932, acc= 68.6% | time=973.9ms | Valid: loss=1.077, acc= 64.4% |
+Train 4: (2320, 47913)
+Epoch   6 | Train: loss=0.871, acc= 70.7% | time=2698.8ms | Valid: loss=0.992, acc= 68.0% | *
+Train 4: (2320, 47913)
+Epoch   7 | Train: loss=0.850, acc= 71.9% | time=771.7ms | Valid: loss=1.011, acc= 66.0% |
+Train 4: (2320, 47913)
+Epoch   8 | Train: loss=0.821, acc= 72.2% | time=2727.4ms | Valid: loss=0.992, acc= 67.6% | *
+Train 4: (2320, 47913)
+Epoch   9 | Train: loss=0.780, acc= 73.7% | time=1781.7ms | Valid: loss=0.925, acc= 67.2% | *
+Train 4: (2320, 47913)
+Epoch  10 | Train: loss=0.784, acc= 73.8% | time=1508.7ms | Valid: loss=0.985, acc= 68.4% |
+Train 4: (2320, 47913)
+Epoch  11 | Train: loss=0.761, acc= 75.1% | time=2834.7ms | Valid: loss=0.967, acc= 68.4% |
+Train 4: (2320, 47913)
+Epoch  12 | Train: loss=0.753, acc= 75.1% | time=944.6ms | Valid: loss=0.940, acc= 68.0% |
+Train 4: (2320, 47913)
+Epoch  13 | Train: loss=0.710, acc= 76.3% | time=2619.3ms | Valid: loss=0.992, acc= 67.6% |
+Train 4: (2320, 47913)
+Epoch  14 | Train: loss=0.708, acc= 76.2% | time=995.2ms | Valid: loss=0.966, acc= 66.8% |
+Train 4: (2320, 47913)
+Epoch  15 | Train: loss=0.670, acc= 77.2% | time=2691.5ms | Valid: loss=0.928, acc= 67.6% | lr=5.0e-03
+Train 4: (2320, 47913)
+Epoch  16 | Train: loss=0.671, acc= 77.2% | time=1993.8ms | Valid: loss=0.912, acc= 68.8% | *
+Train 4: (2320, 47913)
+Epoch  17 | Train: loss=0.668, acc= 77.8% | time=1836.8ms | Valid: loss=0.924, acc= 69.6% |
+Train 4: (2320, 47913)
+Epoch  18 | Train: loss=0.656, acc= 78.0% | time=2983.5ms | Valid: loss=0.967, acc= 66.4% |
+Train 4: (2320, 47913)
+Epoch  19 | Train: loss=0.647, acc= 78.0% | time=946.1ms | Valid: loss=0.934, acc= 69.2% |
+Train 4: (2320, 47913)
+Epoch  20 | Train: loss=0.645, acc= 78.0% | time=2447.2ms | Valid: loss=0.906, acc= 70.8% | *
+Train 4: (2320, 47913)
+Epoch  21 | Train: loss=0.627, acc= 78.9% | time=1179.9ms | Valid: loss=0.923, acc= 68.0% |
+Train 4: (2320, 47913)
+Epoch  22 | Train: loss=0.619, acc= 78.8% | time=2634.3ms | Valid: loss=0.918, acc= 69.2% |
+Train 4: (2320, 47913)
+Epoch  23 | Train: loss=0.617, acc= 79.3% | time=1392.8ms | Valid: loss=0.931, acc= 69.6% |
+Train 4: (2320, 47913)
+Epoch  24 | Train: loss=0.605, acc= 79.5% | time=2939.2ms | Valid: loss=0.918, acc= 69.6% |
+Train 4: (2320, 47913)
+Epoch  25 | Train: loss=0.595, acc= 79.9% | time=1232.1ms | Valid: loss=0.892, acc= 69.6% | *
+Train 4: (2320, 47913)
+Epoch  26 | Train: loss=0.597, acc= 79.6% | time=2718.5ms | Valid: loss=0.913, acc= 69.6% |
+Train 4: (2320, 47913)
+Epoch  27 | Train: loss=0.605, acc= 79.2% | time=728.2ms | Valid: loss=0.931, acc= 70.0% |
+Train 4: (2320, 47913)
+Epoch  28 | Train: loss=0.572, acc= 80.7% | time=2438.6ms | Valid: loss=0.898, acc= 69.6% |
+Train 4: (2320, 47913)
+Epoch  29 | Train: loss=0.589, acc= 80.6% | time=2810.3ms | Valid: loss=0.920, acc= 68.8% |
+Train 4: (2320, 47913)
+Epoch  30 | Train: loss=0.565, acc= 80.5% | time=791.6ms | Valid: loss=0.889, acc= 70.8% | *
+Train 4: (2320, 47913)
+Epoch  31 | Train: loss=0.566, acc= 80.9% | time=2925.4ms | Valid: loss=0.900, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  32 | Train: loss=0.560, acc= 80.8% | time=1364.4ms | Valid: loss=0.864, acc= 71.6% | *
+Train 4: (2320, 47913)
+Epoch  33 | Train: loss=0.567, acc= 80.8% | time=2542.3ms | Valid: loss=0.929, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  34 | Train: loss=0.552, acc= 81.4% | time=986.9ms | Valid: loss=0.906, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  35 | Train: loss=0.545, acc= 81.5% | time=2577.6ms | Valid: loss=0.904, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  36 | Train: loss=0.528, acc= 82.2% | time=1325.7ms | Valid: loss=0.873, acc= 71.2% |
+Train 4: (2320, 47913)
+Epoch  37 | Train: loss=0.531, acc= 81.7% | time=2649.0ms | Valid: loss=0.899, acc= 69.6% |
+Train 4: (2320, 47913)
+Epoch  38 | Train: loss=0.534, acc= 81.7% | time=1124.9ms | Valid: loss=0.906, acc= 71.6% | lr=2.5e-03
+Train 4: (2320, 47913)
+Epoch  39 | Train: loss=0.522, acc= 82.4% | time=2899.2ms | Valid: loss=0.867, acc= 72.4% |
+Train 4: (2320, 47913)
+Epoch  40 | Train: loss=0.510, acc= 82.3% | time=1099.9ms | Valid: loss=0.907, acc= 73.2% |
+Train 4: (2320, 47913)
+Epoch  41 | Train: loss=0.518, acc= 82.4% | time=2768.2ms | Valid: loss=0.890, acc= 72.4% |
+Train 4: (2320, 47913)
+Epoch  42 | Train: loss=0.511, acc= 82.7% | time=768.1ms | Valid: loss=0.932, acc= 71.2% |
+Train 4: (2320, 47913)
+Epoch  43 | Train: loss=0.516, acc= 82.2% | time=2843.8ms | Valid: loss=0.906, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  44 | Train: loss=0.499, acc= 82.8% | time=2440.8ms | Valid: loss=0.865, acc= 71.6% | lr=1.3e-03
+Train 4: (2320, 47913)
+Epoch  45 | Train: loss=0.504, acc= 82.8% | time=1984.0ms | Valid: loss=0.890, acc= 72.4% |
+Train 4: (2320, 47913)
+Epoch  46 | Train: loss=0.500, acc= 82.7% | time=2634.9ms | Valid: loss=0.893, acc= 72.4% |
+Train 4: (2320, 47913)
+Epoch  47 | Train: loss=0.496, acc= 82.8% | time=1833.2ms | Valid: loss=0.867, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  48 | Train: loss=0.500, acc= 82.7% | time=2783.9ms | Valid: loss=0.895, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  49 | Train: loss=0.498, acc= 83.0% | time=1486.1ms | Valid: loss=0.901, acc= 70.4% |
+Train 4: (2320, 47913)
+Epoch  50 | Train: loss=0.500, acc= 83.2% | time=2464.7ms | Valid: loss=0.906, acc= 70.0% | lr=6.3e-04
+Train 4: (2320, 47913)
+Epoch  51 | Train: loss=0.495, acc= 83.4% | time=1028.1ms | Valid: loss=0.857, acc= 73.2% | *
+Train 4: (2320, 47913)
+Epoch  52 | Train: loss=0.494, acc= 83.2% | time=2784.5ms | Valid: loss=0.908, acc= 72.0% |
+Train 4: (2320, 47913)
+Epoch  53 | Train: loss=0.503, acc= 82.7% | time=1105.2ms | Valid: loss=0.845, acc= 72.4% | *
+Train 4: (2320, 47913)
+Epoch  54 | Train: loss=0.502, acc= 83.3% | time=2363.9ms | Valid: loss=0.922, acc= 72.8% |
+Train 4: (2320, 47913)
+Epoch  55 | Train: loss=0.484, acc= 83.1% | time=761.1ms | Valid: loss=0.905, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  56 | Train: loss=0.498, acc= 83.0% | time=2938.0ms | Valid: loss=0.856, acc= 72.0% |
+Train 4: (2320, 47913)
+Epoch  57 | Train: loss=0.485, acc= 83.2% | time=1090.6ms | Valid: loss=0.875, acc= 72.8% |
+Train 4: (2320, 47913)
+Epoch  58 | Train: loss=0.487, acc= 83.3% | time=3022.3ms | Valid: loss=0.861, acc= 72.0% |
+Train 4: (2320, 47913)
+Epoch  59 | Train: loss=0.485, acc= 83.4% | time=1150.1ms | Valid: loss=0.863, acc= 72.0% | lr=3.1e-04
+Train 4: (2320, 47913)
+Epoch  60 | Train: loss=0.494, acc= 83.2% | time=2648.8ms | Valid: loss=0.903, acc= 70.0% |
+Train 4: (2320, 47913)
+Epoch  61 | Train: loss=0.480, acc= 83.5% | time=930.5ms | Valid: loss=0.864, acc= 72.8% |
+Train 4: (2320, 47913)
+Epoch  62 | Train: loss=0.485, acc= 83.4% | time=1854.6ms | Valid: loss=0.896, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  63 | Train: loss=0.480, acc= 84.0% | time=1336.3ms | Valid: loss=0.886, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  64 | Train: loss=0.483, acc= 83.6% | time=1185.3ms | Valid: loss=0.893, acc= 70.0% |
+Train 4: (2320, 47913)
+Epoch  65 | Train: loss=0.479, acc= 83.5% | time=1329.7ms | Valid: loss=0.888, acc= 70.0% | lr=1.6e-04
+Train 4: (2320, 47913)
+Epoch  66 | Train: loss=0.492, acc= 83.2% | time=1064.1ms | Valid: loss=0.870, acc= 73.2% |
+Train 4: (2320, 47913)
+Epoch  67 | Train: loss=0.484, acc= 83.5% | time=1304.6ms | Valid: loss=0.880, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  68 | Train: loss=0.486, acc= 83.5% | time=1297.2ms | Valid: loss=0.833, acc= 73.2% | *
+Train 4: (2320, 47913)
+Epoch  69 | Train: loss=0.488, acc= 83.5% | time=1377.0ms | Valid: loss=0.897, acc= 70.0% |
+Train 4: (2320, 47913)
+Epoch  70 | Train: loss=0.487, acc= 83.4% | time=1403.7ms | Valid: loss=0.864, acc= 73.6% |
+Train 4: (2320, 47913)
+Epoch  71 | Train: loss=0.484, acc= 83.5% | time=1353.3ms | Valid: loss=0.941, acc= 68.4% |
+Train 4: (2320, 47913)
+Epoch  72 | Train: loss=0.480, acc= 83.9% | time=1206.0ms | Valid: loss=0.865, acc= 72.0% |
+Train 4: (2320, 47913)
+Epoch  73 | Train: loss=0.481, acc= 83.5% | time=1099.1ms | Valid: loss=0.866, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  74 | Train: loss=0.489, acc= 83.9% | time=1309.5ms | Valid: loss=0.929, acc= 69.6% | lr=7.8e-05
+Train 4: (2320, 47913)
+Epoch  75 | Train: loss=0.485, acc= 83.4% | time=1034.2ms | Valid: loss=0.909, acc= 70.4% |
+Train 4: (2320, 47913)
+Epoch  76 | Train: loss=0.478, acc= 83.7% | time=1164.2ms | Valid: loss=0.881, acc= 70.8% |
+Train 4: (2320, 47913)
+Epoch  77 | Train: loss=0.484, acc= 83.3% | time=1192.2ms | Valid: loss=0.881, acc= 72.8% |
+Train 4: (2320, 47913)
+Epoch  78 | Train: loss=0.492, acc= 83.3% | time=1185.8ms | Valid: loss=0.895, acc= 71.2% |
+Train 4: (2320, 47913)
+Epoch  79 | Train: loss=0.485, acc= 83.5% | time=1142.9ms | Valid: loss=0.875, acc= 73.2% |
+Train 4: (2320, 47913)
+Epoch  80 | Train: loss=0.489, acc= 83.4% | time=1094.9ms | Valid: loss=0.887, acc= 71.2% | lr=3.9e-05
+Train 4: (2320, 47913)
+Epoch  81 | Train: loss=0.480, acc= 83.6% | time=1245.2ms | Valid: loss=0.895, acc= 72.8% |
+Train 4: (2320, 47913)
+Epoch  82 | Train: loss=0.486, acc= 83.3% | time=1239.8ms | Valid: loss=0.889, acc= 72.8% |
+Train 4: (2320, 47913)
+Epoch  83 | Train: loss=0.491, acc= 83.2% | time=1430.4ms | Valid: loss=0.886, acc= 71.2% |
+Train 4: (2320, 47913)
+Epoch  84 | Train: loss=0.487, acc= 83.3% | time=1199.0ms | Valid: loss=0.864, acc= 72.0% |
+Train 4: (2320, 47913)
+Epoch  85 | Train: loss=0.488, acc= 83.3% | time=1487.9ms | Valid: loss=0.852, acc= 71.6% |
+Train 4: (2320, 47913)
+Epoch  86 | Train: loss=0.479, acc= 83.7% | time=2758.4ms | Valid: loss=0.851, acc= 72.0% | lr=2.0e-05
+Train 4: (2320, 47913)
+Epoch  87 | Train: loss=0.483, acc= 83.6% | time=836.3ms | Valid: loss=0.910, acc= 70.4% |
+Train 4: (2320, 47913)
+Epoch  88 | Train: loss=0.488, acc= 83.2% | time=2636.1ms | Valid: loss=0.912, acc= 70.4% |
+Train 4: (2320, 47913)
+Epoch  89 | Train: loss=0.484, acc= 83.7% | time=2435.4ms | Valid: loss=0.891, acc= 71.2% |
+Train 4: (2320, 47913)
+Epoch  90 | Train: loss=0.475, acc= 83.9% | time=1629.2ms | Valid: loss=0.897, acc= 68.4% |
+Train 4: (2320, 47913)
+Epoch  91 | Train: loss=0.485, acc= 83.4% | time=2434.4ms | Valid: loss=0.886, acc= 73.2% |
+Train 4: (2320, 47913)
+Epoch  92 | Train: loss=0.479, acc= 83.4% | time=859.8ms | Valid: loss=0.862, acc= 72.8% | lr=9.8e-06
+Test: loss=0.850 , acc= 73.6%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.982 0.982 0.982 0.982 0.982]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 11/48
+Layer 2 : 226/576
+Layer 3 : 349/512
+Layer 4 : 374/1024
+Layer 5 : 487/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.8%  67.5%  70.8%  70.9%  73.3%   0.0%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  5 (cifar100-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 5: (6608, 52201)
+Epoch   1 | Train: loss=1.183, acc= 58.9% | time=2437.1ms | Valid: loss=1.187, acc= 59.6% | *
+Train 5: (2320, 47913)
+Epoch   2 | Train: loss=1.065, acc= 62.7% | time=2917.3ms | Valid: loss=1.093, acc= 60.0% | *
+Train 5: (2320, 47913)
+Epoch   3 | Train: loss=0.969, acc= 65.7% | time=1051.3ms | Valid: loss=1.077, acc= 60.8% | *
+Train 5: (2320, 47913)
+Epoch   4 | Train: loss=0.910, acc= 68.3% | time=2735.4ms | Valid: loss=0.935, acc= 67.6% | *
+Train 5: (2320, 47913)
+Epoch   5 | Train: loss=0.874, acc= 68.9% | time=955.3ms | Valid: loss=0.950, acc= 67.6% |
+Train 5: (2320, 47913)
+Epoch   6 | Train: loss=0.878, acc= 69.2% | time=2854.2ms | Valid: loss=0.927, acc= 69.2% | *
+Train 5: (2320, 47913)
+Epoch   7 | Train: loss=0.864, acc= 69.5% | time=1030.0ms | Valid: loss=0.959, acc= 65.2% |
+Train 5: (2320, 47913)
+Epoch   8 | Train: loss=0.811, acc= 71.7% | time=2591.8ms | Valid: loss=0.899, acc= 67.6% | *
+Train 5: (2320, 47913)
+Epoch   9 | Train: loss=0.797, acc= 72.0% | time=781.1ms | Valid: loss=0.900, acc= 70.0% |
+Train 5: (2320, 47913)
+Epoch  10 | Train: loss=0.766, acc= 73.4% | time=2430.4ms | Valid: loss=0.897, acc= 66.8% | *
+Train 5: (2320, 47913)
+Epoch  11 | Train: loss=0.782, acc= 72.6% | time=2378.6ms | Valid: loss=0.872, acc= 67.6% | *
+Train 5: (2320, 47913)
+Epoch  12 | Train: loss=0.780, acc= 72.7% | time=1702.2ms | Valid: loss=0.919, acc= 66.4% |
+Train 5: (2320, 47913)
+Epoch  13 | Train: loss=0.749, acc= 73.6% | time=2786.5ms | Valid: loss=0.913, acc= 66.8% |
+Train 5: (2320, 47913)
+Epoch  14 | Train: loss=0.725, acc= 74.6% | time=975.9ms | Valid: loss=0.869, acc= 69.6% | *
+Train 5: (2320, 47913)
+Epoch  15 | Train: loss=0.702, acc= 75.4% | time=3012.2ms | Valid: loss=0.870, acc= 68.4% |
+Train 5: (2320, 47913)
+Epoch  16 | Train: loss=0.710, acc= 74.6% | time=967.5ms | Valid: loss=0.916, acc= 67.2% |
+Train 5: (2320, 47913)
+Epoch  17 | Train: loss=0.709, acc= 75.1% | time=2738.9ms | Valid: loss=0.930, acc= 66.8% |
+Train 5: (2320, 47913)
+Epoch  18 | Train: loss=0.670, acc= 76.1% | time=2505.7ms | Valid: loss=0.826, acc= 67.6% | *
+Train 5: (2320, 47913)
+Epoch  19 | Train: loss=0.683, acc= 75.6% | time=2032.4ms | Valid: loss=0.906, acc= 69.2% |
+Train 5: (2320, 47913)
+Epoch  20 | Train: loss=0.636, acc= 77.4% | time=2879.6ms | Valid: loss=0.853, acc= 69.2% |
+Train 5: (2320, 47913)
+Epoch  21 | Train: loss=0.641, acc= 77.6% | time=1531.5ms | Valid: loss=0.797, acc= 70.4% | *
+Train 5: (2320, 47913)
+Epoch  22 | Train: loss=0.622, acc= 77.5% | time=3447.1ms | Valid: loss=0.817, acc= 67.2% |
+Train 5: (2320, 47913)
+Epoch  23 | Train: loss=0.629, acc= 78.1% | time=1051.5ms | Valid: loss=0.840, acc= 67.2% |
+Train 5: (2320, 47913)
+Epoch  24 | Train: loss=0.640, acc= 77.8% | time=2970.8ms | Valid: loss=0.872, acc= 69.2% |
+Train 5: (2320, 47913)
+Epoch  25 | Train: loss=0.598, acc= 78.7% | time=1519.1ms | Valid: loss=0.826, acc= 68.8% |
+Train 5: (2320, 47913)
+Epoch  26 | Train: loss=0.579, acc= 79.8% | time=2794.2ms | Valid: loss=0.824, acc= 70.0% |
+Train 5: (2320, 47913)
+Epoch  27 | Train: loss=0.562, acc= 80.2% | time=2528.3ms | Valid: loss=0.847, acc= 71.6% | lr=5.0e-03
+Train 5: (2320, 47913)
+Epoch  28 | Train: loss=0.551, acc= 80.7% | time=1585.9ms | Valid: loss=0.748, acc= 71.6% | *
+Train 5: (2320, 47913)
+Epoch  29 | Train: loss=0.563, acc= 80.4% | time=2716.4ms | Valid: loss=0.825, acc= 68.4% |
+Train 5: (2320, 47913)
+Epoch  30 | Train: loss=0.560, acc= 79.7% | time=943.7ms | Valid: loss=0.769, acc= 70.4% |
+Train 5: (2320, 47913)
+Epoch  31 | Train: loss=0.551, acc= 80.3% | time=2945.3ms | Valid: loss=0.774, acc= 68.8% |
+Train 5: (2320, 47913)
+Epoch  32 | Train: loss=0.543, acc= 80.4% | time=2042.2ms | Valid: loss=0.776, acc= 72.0% |
+Train 5: (2320, 47913)
+Epoch  33 | Train: loss=0.535, acc= 81.4% | time=2085.2ms | Valid: loss=0.773, acc= 69.2% |
+Train 5: (2320, 47913)
+Epoch  34 | Train: loss=0.534, acc= 81.4% | time=2661.1ms | Valid: loss=0.777, acc= 72.8% | lr=2.5e-03
+Train 5: (2320, 47913)
+Epoch  35 | Train: loss=0.535, acc= 81.3% | time=1145.0ms | Valid: loss=0.803, acc= 68.0% |
+Train 5: (2320, 47913)
+Epoch  36 | Train: loss=0.528, acc= 81.6% | time=2718.6ms | Valid: loss=0.787, acc= 71.2% |
+Train 5: (2320, 47913)
+Epoch  37 | Train: loss=0.521, acc= 81.3% | time=870.1ms | Valid: loss=0.736, acc= 70.8% | *
+Train 5: (2320, 47913)
+Epoch  38 | Train: loss=0.527, acc= 81.7% | time=2377.5ms | Valid: loss=0.794, acc= 67.6% |
+Train 5: (2320, 47913)
+Epoch  39 | Train: loss=0.525, acc= 81.5% | time=2980.0ms | Valid: loss=0.805, acc= 70.0% |
+Train 5: (2320, 47913)
+Epoch  40 | Train: loss=0.508, acc= 81.6% | time=1284.0ms | Valid: loss=0.802, acc= 71.2% |
+Train 5: (2320, 47913)
+Epoch  41 | Train: loss=0.520, acc= 81.7% | time=3150.0ms | Valid: loss=0.791, acc= 72.0% |
+Train 5: (2320, 47913)
+Epoch  42 | Train: loss=0.510, acc= 81.9% | time=939.8ms | Valid: loss=0.767, acc= 70.8% |
+Train 5: (2320, 47913)
+Epoch  43 | Train: loss=0.513, acc= 81.8% | time=2239.4ms | Valid: loss=0.773, acc= 71.2% | lr=1.3e-03
+Train 5: (2320, 47913)
+Epoch  44 | Train: loss=0.511, acc= 82.0% | time=3048.8ms | Valid: loss=0.780, acc= 70.0% |
+Train 5: (2320, 47913)
+Epoch  45 | Train: loss=0.502, acc= 82.7% | time=1263.3ms | Valid: loss=0.764, acc= 71.6% |
+Train 5: (2320, 47913)
+Epoch  46 | Train: loss=0.514, acc= 81.8% | time=2695.8ms | Valid: loss=0.821, acc= 68.4% |
+Train 5: (2320, 47913)
+Epoch  47 | Train: loss=0.506, acc= 82.1% | time=825.4ms | Valid: loss=0.780, acc= 70.8% |
+Train 5: (2320, 47913)
+Epoch  48 | Train: loss=0.501, acc= 82.3% | time=2871.6ms | Valid: loss=0.787, acc= 71.6% |
+Train 5: (2320, 47913)
+Epoch  49 | Train: loss=0.508, acc= 81.7% | time=2858.5ms | Valid: loss=0.830, acc= 70.4% | lr=6.3e-04
+Train 5: (2320, 47913)
+Epoch  50 | Train: loss=0.499, acc= 82.3% | time=1616.4ms | Valid: loss=0.800, acc= 72.4% |
+Train 5: (2320, 47913)
+Epoch  51 | Train: loss=0.505, acc= 82.0% | time=2989.0ms | Valid: loss=0.747, acc= 71.2% |
+Train 5: (2320, 47913)
+Epoch  52 | Train: loss=0.503, acc= 82.0% | time=978.6ms | Valid: loss=0.741, acc= 71.6% |
+Train 5: (2320, 47913)
+Epoch  53 | Train: loss=0.507, acc= 82.0% | time=2680.2ms | Valid: loss=0.768, acc= 72.4% |
+Train 5: (2320, 47913)
+Epoch  54 | Train: loss=0.507, acc= 82.2% | time=1448.5ms | Valid: loss=0.787, acc= 70.4% |
+Train 5: (2320, 47913)
+Epoch  55 | Train: loss=0.501, acc= 82.3% | time=2884.8ms | Valid: loss=0.766, acc= 72.4% | lr=3.1e-04
+Train 5: (2320, 47913)
+Epoch  56 | Train: loss=0.496, acc= 82.3% | time=1706.3ms | Valid: loss=0.779, acc= 71.6% |
+Train 5: (2320, 47913)
+Epoch  57 | Train: loss=0.500, acc= 82.4% | time=2214.9ms | Valid: loss=0.795, acc= 73.2% |
+Train 5: (2320, 47913)
+Epoch  58 | Train: loss=0.498, acc= 82.3% | time=2342.0ms | Valid: loss=0.764, acc= 70.4% |
+Train 5: (2320, 47913)
+Epoch  59 | Train: loss=0.493, acc= 82.3% | time=1033.5ms | Valid: loss=0.752, acc= 71.2% |
+Train 5: (2320, 47913)
+Epoch  60 | Train: loss=0.503, acc= 82.4% | time=2619.4ms | Valid: loss=0.753, acc= 73.6% |
+Train 5: (2320, 47913)
+Epoch  61 | Train: loss=0.494, acc= 82.7% | time=732.5ms | Valid: loss=0.761, acc= 71.6% | lr=1.6e-04
+Train 5: (2320, 47913)
+Epoch  62 | Train: loss=0.498, acc= 82.3% | time=2844.9ms | Valid: loss=0.761, acc= 70.8% |
+Train 5: (2320, 47913)
+Epoch  63 | Train: loss=0.496, acc= 82.0% | time=1439.2ms | Valid: loss=0.799, acc= 68.0% |
+Train 5: (2320, 47913)
+Epoch  64 | Train: loss=0.501, acc= 81.9% | time=2387.2ms | Valid: loss=0.772, acc= 71.6% |
+Train 5: (2320, 47913)
+Epoch  65 | Train: loss=0.501, acc= 82.5% | time=2868.8ms | Valid: loss=0.808, acc= 71.2% |
+Train 5: (2320, 47913)
+Epoch  66 | Train: loss=0.486, acc= 82.9% | time=987.2ms | Valid: loss=0.739, acc= 74.8% |
+Train 5: (2320, 47913)
+Epoch  67 | Train: loss=0.505, acc= 82.3% | time=2896.0ms | Valid: loss=0.771, acc= 71.2% | lr=7.8e-05
+Train 5: (2320, 47913)
+Epoch  68 | Train: loss=0.501, acc= 82.5% | time=879.5ms | Valid: loss=0.748, acc= 72.0% |
+Train 5: (2320, 47913)
+Epoch  69 | Train: loss=0.498, acc= 82.3% | time=2785.3ms | Valid: loss=0.762, acc= 73.2% |
+Train 5: (2320, 47913)
+Epoch  70 | Train: loss=0.499, acc= 82.2% | time=2083.3ms | Valid: loss=0.819, acc= 70.8% |
+Train 5: (2320, 47913)
+Epoch  71 | Train: loss=0.498, acc= 82.3% | time=1998.0ms | Valid: loss=0.837, acc= 70.8% |
+Train 5: (2320, 47913)
+Epoch  72 | Train: loss=0.496, acc= 82.6% | time=2661.5ms | Valid: loss=0.801, acc= 70.0% |
+Train 5: (2320, 47913)
+Epoch  73 | Train: loss=0.490, acc= 82.6% | time=1031.3ms | Valid: loss=0.781, acc= 72.0% | lr=3.9e-05
+Train 5: (2320, 47913)
+Epoch  74 | Train: loss=0.504, acc= 82.5% | time=2774.3ms | Valid: loss=0.725, acc= 73.6% | *
+Train 5: (2320, 47913)
+Epoch  75 | Train: loss=0.495, acc= 82.2% | time=768.8ms | Valid: loss=0.801, acc= 72.0% |
+Train 5: (2320, 47913)
+Epoch  76 | Train: loss=0.490, acc= 82.7% | time=1883.6ms | Valid: loss=0.724, acc= 72.8% | *
+Train 5: (2320, 47913)
+Epoch  77 | Train: loss=0.492, acc= 83.1% | time=2738.6ms | Valid: loss=0.763, acc= 71.6% |
+Train 5: (2320, 47913)
+Epoch  78 | Train: loss=0.497, acc= 82.2% | time=1230.2ms | Valid: loss=0.771, acc= 72.4% |
+Train 5: (2320, 47913)
+Epoch  79 | Train: loss=0.494, acc= 82.9% | time=2602.8ms | Valid: loss=0.775, acc= 72.4% |
+Train 5: (2320, 47913)
+Epoch  80 | Train: loss=0.508, acc= 81.9% | time=793.9ms | Valid: loss=0.785, acc= 70.8% |
+Train 5: (2320, 47913)
+Epoch  81 | Train: loss=0.501, acc= 82.4% | time=2704.4ms | Valid: loss=0.814, acc= 69.6% |
+Train 5: (2320, 47913)
+Epoch  82 | Train: loss=0.504, acc= 82.3% | time=707.8ms | Valid: loss=0.759, acc= 70.4% | lr=2.0e-05
+Train 5: (2320, 47913)
+Epoch  83 | Train: loss=0.509, acc= 82.1% | time=2519.9ms | Valid: loss=0.770, acc= 70.4% |
+Train 5: (2320, 47913)
+Epoch  84 | Train: loss=0.496, acc= 83.0% | time=2650.8ms | Valid: loss=0.773, acc= 70.4% |
+Train 5: (2320, 47913)
+Epoch  85 | Train: loss=0.490, acc= 82.4% | time=1315.4ms | Valid: loss=0.789, acc= 68.8% |
+Train 5: (2320, 47913)
+Epoch  86 | Train: loss=0.501, acc= 82.4% | time=2746.5ms | Valid: loss=0.760, acc= 69.6% |
+Train 5: (2320, 47913)
+Epoch  87 | Train: loss=0.496, acc= 82.2% | time=860.3ms | Valid: loss=0.791, acc= 69.6% |
+Train 5: (2320, 47913)
+Epoch  88 | Train: loss=0.495, acc= 82.4% | time=2865.1ms | Valid: loss=0.780, acc= 71.2% | lr=9.8e-06
+Test: loss=0.805 , acc= 72.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.985 0.985 0.985 0.985 0.985]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 14/48
+Layer 2 : 249/576
+Layer 3 : 371/512
+Layer 4 : 447/1024
+Layer 5 : 587/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.8%  67.5%  70.8%  70.9%  73.3%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.3%  67.3%  70.2%  71.8%  73.8%  71.5%   0.0%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  6 (cifar100-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 6: (6608, 52201)
+Epoch   1 | Train: loss=1.103, acc= 62.6% | time=1827.0ms | Valid: loss=1.253, acc= 54.0% | *
+Train 6: (2320, 47913)
+Epoch   2 | Train: loss=0.999, acc= 65.0% | time=2766.3ms | Valid: loss=1.197, acc= 56.0% | *
+Train 6: (2320, 47913)
+Epoch   3 | Train: loss=0.941, acc= 67.2% | time=1294.0ms | Valid: loss=1.165, acc= 57.6% | *
+Train 6: (2320, 47913)
+Epoch   4 | Train: loss=0.917, acc= 67.5% | time=2679.0ms | Valid: loss=1.159, acc= 57.6% | *
+Train 6: (2320, 47913)
+Epoch   5 | Train: loss=0.912, acc= 67.6% | time=1265.8ms | Valid: loss=1.170, acc= 57.6% |
+Train 6: (2320, 47913)
+Epoch   6 | Train: loss=0.873, acc= 69.3% | time=2841.1ms | Valid: loss=1.195, acc= 58.0% |
+Train 6: (2320, 47913)
+Epoch   7 | Train: loss=0.816, acc= 71.3% | time=1842.1ms | Valid: loss=1.189, acc= 60.8% |
+Train 6: (2320, 47913)
+Epoch   8 | Train: loss=0.832, acc= 70.7% | time=2789.4ms | Valid: loss=1.191, acc= 60.8% |
+Train 6: (2320, 47913)
+Epoch   9 | Train: loss=0.817, acc= 71.1% | time=1178.7ms | Valid: loss=1.156, acc= 59.2% | *
+Train 6: (2320, 47913)
+Epoch  10 | Train: loss=0.795, acc= 72.2% | time=2768.7ms | Valid: loss=1.203, acc= 56.0% |
+Train 6: (2320, 47913)
+Epoch  11 | Train: loss=0.770, acc= 73.4% | time=1225.2ms | Valid: loss=1.144, acc= 60.0% | *
+Train 6: (2320, 47913)
+Epoch  12 | Train: loss=0.756, acc= 73.4% | time=2612.6ms | Valid: loss=1.126, acc= 61.6% | *
+Train 6: (2320, 47913)
+Epoch  13 | Train: loss=0.749, acc= 73.9% | time=893.5ms | Valid: loss=1.117, acc= 61.6% | *
+Train 6: (2320, 47913)
+Epoch  14 | Train: loss=0.747, acc= 73.2% | time=2128.1ms | Valid: loss=1.103, acc= 60.4% | *
+Train 6: (2320, 47913)
+Epoch  15 | Train: loss=0.704, acc= 75.6% | time=2848.9ms | Valid: loss=1.091, acc= 62.4% | *
+Train 6: (2320, 47913)
+Epoch  16 | Train: loss=0.702, acc= 75.4% | time=830.0ms | Valid: loss=1.092, acc= 64.8% |
+Train 6: (2320, 47913)
+Epoch  17 | Train: loss=0.693, acc= 75.2% | time=2794.6ms | Valid: loss=1.113, acc= 60.0% |
+Train 6: (2320, 47913)
+Epoch  18 | Train: loss=0.657, acc= 76.7% | time=1435.5ms | Valid: loss=1.121, acc= 62.0% |
+Train 6: (2320, 47913)
+Epoch  19 | Train: loss=0.663, acc= 76.2% | time=2578.5ms | Valid: loss=1.182, acc= 61.2% |
+Train 6: (2320, 47913)
+Epoch  20 | Train: loss=0.643, acc= 77.6% | time=1476.6ms | Valid: loss=1.091, acc= 62.0% |
+Train 6: (2320, 47913)
+Epoch  21 | Train: loss=0.634, acc= 77.2% | time=2548.4ms | Valid: loss=1.085, acc= 64.4% | *
+Train 6: (2320, 47913)
+Epoch  22 | Train: loss=0.637, acc= 77.2% | time=2507.4ms | Valid: loss=1.105, acc= 59.2% |
+Train 6: (2320, 47913)
+Epoch  23 | Train: loss=0.631, acc= 77.6% | time=1581.8ms | Valid: loss=1.127, acc= 62.0% |
+Train 6: (2320, 47913)
+Epoch  24 | Train: loss=0.610, acc= 78.8% | time=2621.5ms | Valid: loss=1.111, acc= 63.2% |
+Train 6: (2320, 47913)
+Epoch  25 | Train: loss=0.599, acc= 79.3% | time=1297.3ms | Valid: loss=1.105, acc= 60.0% |
+Train 6: (2320, 47913)
+Epoch  26 | Train: loss=0.584, acc= 79.7% | time=2743.2ms | Valid: loss=1.132, acc= 62.0% |
+Train 6: (2320, 47913)
+Epoch  27 | Train: loss=0.594, acc= 79.0% | time=706.1ms | Valid: loss=1.141, acc= 65.2% | lr=5.0e-03
+Train 6: (2320, 47913)
+Epoch  28 | Train: loss=0.561, acc= 80.6% | time=2739.3ms | Valid: loss=1.077, acc= 64.8% | *
+Train 6: (2320, 47913)
+Epoch  29 | Train: loss=0.564, acc= 79.7% | time=730.3ms | Valid: loss=1.093, acc= 63.2% |
+Train 6: (2320, 47913)
+Epoch  30 | Train: loss=0.563, acc= 80.2% | time=2223.5ms | Valid: loss=1.111, acc= 61.6% |
+Train 6: (2320, 47913)
+Epoch  31 | Train: loss=0.565, acc= 80.1% | time=2251.7ms | Valid: loss=1.057, acc= 64.4% | *
+Train 6: (2320, 47913)
+Epoch  32 | Train: loss=0.556, acc= 80.0% | time=1484.8ms | Valid: loss=1.091, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  33 | Train: loss=0.548, acc= 81.1% | time=2788.9ms | Valid: loss=1.047, acc= 64.4% | *
+Train 6: (2320, 47913)
+Epoch  34 | Train: loss=0.543, acc= 80.9% | time=1613.0ms | Valid: loss=1.092, acc= 65.6% |
+Train 6: (2320, 47913)
+Epoch  35 | Train: loss=0.551, acc= 80.8% | time=2639.7ms | Valid: loss=1.119, acc= 63.2% |
+Train 6: (2320, 47913)
+Epoch  36 | Train: loss=0.541, acc= 80.8% | time=986.0ms | Valid: loss=1.069, acc= 64.0% |
+Train 6: (2320, 47913)
+Epoch  37 | Train: loss=0.529, acc= 81.4% | time=2728.0ms | Valid: loss=1.058, acc= 64.0% |
+Train 6: (2320, 47913)
+Epoch  38 | Train: loss=0.544, acc= 80.9% | time=907.0ms | Valid: loss=1.087, acc= 65.2% |
+Train 6: (2320, 47913)
+Epoch  39 | Train: loss=0.549, acc= 80.5% | time=2915.2ms | Valid: loss=1.120, acc= 64.8% | lr=2.5e-03
+Train 6: (2320, 47913)
+Epoch  40 | Train: loss=0.524, acc= 81.4% | time=1066.1ms | Valid: loss=1.123, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  41 | Train: loss=0.511, acc= 82.0% | time=2890.9ms | Valid: loss=1.115, acc= 65.6% |
+Train 6: (2320, 47913)
+Epoch  42 | Train: loss=0.519, acc= 81.5% | time=2335.8ms | Valid: loss=1.071, acc= 65.6% |
+Train 6: (2320, 47913)
+Epoch  43 | Train: loss=0.516, acc= 81.8% | time=2059.1ms | Valid: loss=1.116, acc= 63.6% |
+Train 6: (2320, 47913)
+Epoch  44 | Train: loss=0.510, acc= 81.8% | time=1312.8ms | Valid: loss=1.078, acc= 63.2% |
+Train 6: (2320, 47913)
+Epoch  45 | Train: loss=0.510, acc= 82.0% | time=1325.7ms | Valid: loss=1.093, acc= 64.8% | lr=1.3e-03
+Train 6: (2320, 47913)
+Epoch  46 | Train: loss=0.517, acc= 81.7% | time=1132.6ms | Valid: loss=1.109, acc= 61.6% |
+Train 6: (2320, 47913)
+Epoch  47 | Train: loss=0.520, acc= 81.6% | time=1251.9ms | Valid: loss=1.066, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  48 | Train: loss=0.504, acc= 81.7% | time=1458.3ms | Valid: loss=1.078, acc= 64.8% |
+Train 6: (2320, 47913)
+Epoch  49 | Train: loss=0.508, acc= 81.8% | time=1449.5ms | Valid: loss=1.101, acc= 65.2% |
+Train 6: (2320, 47913)
+Epoch  50 | Train: loss=0.513, acc= 81.8% | time=1240.8ms | Valid: loss=1.142, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  51 | Train: loss=0.512, acc= 82.0% | time=1284.4ms | Valid: loss=1.072, acc= 64.8% | lr=6.3e-04
+Train 6: (2320, 47913)
+Epoch  52 | Train: loss=0.510, acc= 82.2% | time=1254.4ms | Valid: loss=1.093, acc= 65.2% |
+Train 6: (2320, 47913)
+Epoch  53 | Train: loss=0.509, acc= 82.3% | time=1380.3ms | Valid: loss=1.069, acc= 65.6% |
+Train 6: (2320, 47913)
+Epoch  54 | Train: loss=0.506, acc= 82.3% | time=1643.6ms | Valid: loss=1.128, acc= 65.2% |
+Train 6: (2320, 47913)
+Epoch  55 | Train: loss=0.503, acc= 81.9% | time=1277.4ms | Valid: loss=1.071, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  56 | Train: loss=0.503, acc= 82.5% | time=1136.1ms | Valid: loss=1.113, acc= 64.8% |
+Train 6: (2320, 47913)
+Epoch  57 | Train: loss=0.500, acc= 82.6% | time=1265.0ms | Valid: loss=1.106, acc= 66.8% | lr=3.1e-04
+Train 6: (2320, 47913)
+Epoch  58 | Train: loss=0.507, acc= 81.7% | time=1119.1ms | Valid: loss=1.079, acc= 67.2% |
+Train 6: (2320, 47913)
+Epoch  59 | Train: loss=0.509, acc= 81.9% | time=921.9ms | Valid: loss=1.087, acc= 66.0% |
+Train 6: (2320, 47913)
+Epoch  60 | Train: loss=0.499, acc= 82.5% | time=1176.9ms | Valid: loss=1.070, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  61 | Train: loss=0.498, acc= 82.4% | time=956.6ms | Valid: loss=1.061, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  62 | Train: loss=0.505, acc= 82.2% | time=1374.3ms | Valid: loss=1.070, acc= 66.4% |
+Train 6: (2320, 47913)
+Epoch  63 | Train: loss=0.497, acc= 82.7% | time=1307.2ms | Valid: loss=1.095, acc= 65.6% | lr=1.6e-04
+Train 6: (2320, 47913)
+Epoch  64 | Train: loss=0.510, acc= 82.0% | time=1353.6ms | Valid: loss=1.094, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  65 | Train: loss=0.505, acc= 81.9% | time=1060.6ms | Valid: loss=1.104, acc= 63.6% |
+Train 6: (2320, 47913)
+Epoch  66 | Train: loss=0.496, acc= 82.3% | time=886.5ms | Valid: loss=1.100, acc= 63.6% |
+Train 6: (2320, 47913)
+Epoch  67 | Train: loss=0.500, acc= 82.4% | time=1942.2ms | Valid: loss=1.098, acc= 65.2% |
+Train 6: (2320, 47913)
+Epoch  68 | Train: loss=0.499, acc= 82.3% | time=2969.9ms | Valid: loss=1.097, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  69 | Train: loss=0.506, acc= 82.7% | time=1302.3ms | Valid: loss=1.106, acc= 64.4% | lr=7.8e-05
+Train 6: (2320, 47913)
+Epoch  70 | Train: loss=0.507, acc= 81.9% | time=2858.7ms | Valid: loss=1.057, acc= 64.8% |
+Train 6: (2320, 47913)
+Epoch  71 | Train: loss=0.501, acc= 82.2% | time=778.4ms | Valid: loss=1.095, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  72 | Train: loss=0.497, acc= 82.2% | time=2692.9ms | Valid: loss=1.064, acc= 66.0% |
+Train 6: (2320, 47913)
+Epoch  73 | Train: loss=0.508, acc= 81.8% | time=1868.5ms | Valid: loss=1.077, acc= 66.8% |
+Train 6: (2320, 47913)
+Epoch  74 | Train: loss=0.511, acc= 82.2% | time=1709.4ms | Valid: loss=1.091, acc= 62.0% |
+Train 6: (2320, 47913)
+Epoch  75 | Train: loss=0.493, acc= 82.7% | time=2913.5ms | Valid: loss=1.046, acc= 65.2% | *
+Train 6: (2320, 47913)
+Epoch  76 | Train: loss=0.500, acc= 82.7% | time=1770.3ms | Valid: loss=1.063, acc= 66.4% |
+Train 6: (2320, 47913)
+Epoch  77 | Train: loss=0.503, acc= 82.2% | time=2744.8ms | Valid: loss=1.075, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  78 | Train: loss=0.502, acc= 82.4% | time=1377.2ms | Valid: loss=1.086, acc= 64.8% |
+Train 6: (2320, 47913)
+Epoch  79 | Train: loss=0.496, acc= 83.0% | time=2823.7ms | Valid: loss=1.076, acc= 65.6% |
+Train 6: (2320, 47913)
+Epoch  80 | Train: loss=0.503, acc= 82.6% | time=1592.3ms | Valid: loss=1.083, acc= 63.2% |
+Train 6: (2320, 47913)
+Epoch  81 | Train: loss=0.503, acc= 82.1% | time=2756.5ms | Valid: loss=1.066, acc= 65.2% | lr=3.9e-05
+Train 6: (2320, 47913)
+Epoch  82 | Train: loss=0.498, acc= 82.1% | time=1142.0ms | Valid: loss=1.088, acc= 66.4% |
+Train 6: (2320, 47913)
+Epoch  83 | Train: loss=0.509, acc= 82.4% | time=2668.6ms | Valid: loss=1.128, acc= 63.6% |
+Train 6: (2320, 47913)
+Epoch  84 | Train: loss=0.502, acc= 82.3% | time=832.5ms | Valid: loss=1.094, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  85 | Train: loss=0.500, acc= 82.6% | time=2944.1ms | Valid: loss=1.132, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  86 | Train: loss=0.503, acc= 82.4% | time=788.9ms | Valid: loss=1.066, acc= 64.4% |
+Train 6: (2320, 47913)
+Epoch  87 | Train: loss=0.506, acc= 82.0% | time=2892.3ms | Valid: loss=1.119, acc= 64.0% | lr=2.0e-05
+Train 6: (2320, 47913)
+Epoch  88 | Train: loss=0.505, acc= 82.0% | time=2074.3ms | Valid: loss=1.045, acc= 64.0% | *
+Train 6: (2320, 47913)
+Epoch  89 | Train: loss=0.502, acc= 82.1% | time=1411.1ms | Valid: loss=1.090, acc= 66.4% |
+Train 6: (2320, 47913)
+Epoch  90 | Train: loss=0.504, acc= 81.9% | time=2671.0ms | Valid: loss=1.074, acc= 66.8% |
+Train 6: (2320, 47913)
+Epoch  91 | Train: loss=0.512, acc= 81.6% | time=1037.8ms | Valid: loss=1.058, acc= 66.4% |
+Train 6: (2320, 47913)
+Epoch  92 | Train: loss=0.504, acc= 82.5% | time=2846.1ms | Valid: loss=1.051, acc= 66.4% |
+Train 6: (2320, 47913)
+Epoch  93 | Train: loss=0.497, acc= 82.3% | time=1171.8ms | Valid: loss=1.117, acc= 62.8% |
+Train 6: (2320, 47913)
+Epoch  94 | Train: loss=0.501, acc= 82.3% | time=2493.2ms | Valid: loss=1.075, acc= 64.4% | lr=9.8e-06
+Test: loss=0.877 , acc= 71.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.988 0.988 0.988 0.988 0.988]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 14/48
+Layer 2 : 258/576
+Layer 3 : 384/512
+Layer 4 : 517/1024
+Layer 5 : 685/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.8%  67.5%  70.8%  70.9%  73.3%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.3%  67.3%  70.2%  71.8%  73.8%  71.5%   0.0%   0.0%   0.0%   0.0% 
+	 76.5%  66.4%  71.2%  71.4%  73.7%  71.8%  70.4%   0.0%   0.0%   0.0% 
+****************************************************************************************************
+Task  7 (cifar100-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 7: (6608, 52201)
+Epoch   1 | Train: loss=1.138, acc= 62.1% | time=1046.5ms | Valid: loss=1.243, acc= 55.2% | *
+Train 7: (2320, 47913)
+Epoch   2 | Train: loss=1.035, acc= 64.8% | time=2612.8ms | Valid: loss=1.168, acc= 57.2% | *
+Train 7: (2320, 47913)
+Epoch   3 | Train: loss=1.002, acc= 65.5% | time=984.3ms | Valid: loss=1.146, acc= 59.6% | *
+Train 7: (2320, 47913)
+Epoch   4 | Train: loss=0.983, acc= 66.5% | time=2642.0ms | Valid: loss=1.144, acc= 60.4% | *
+Train 7: (2320, 47913)
+Epoch   5 | Train: loss=0.934, acc= 68.5% | time=797.7ms | Valid: loss=1.119, acc= 59.2% | *
+Train 7: (2320, 47913)
+Epoch   6 | Train: loss=0.926, acc= 68.5% | time=2469.0ms | Valid: loss=1.111, acc= 62.8% | *
+Train 7: (2320, 47913)
+Epoch   7 | Train: loss=0.890, acc= 69.5% | time=2510.2ms | Valid: loss=1.042, acc= 66.4% | *
+Train 7: (2320, 47913)
+Epoch   8 | Train: loss=0.890, acc= 69.0% | time=1907.6ms | Valid: loss=1.125, acc= 62.0% |
+Train 7: (2320, 47913)
+Epoch   9 | Train: loss=0.863, acc= 70.7% | time=3047.8ms | Valid: loss=1.131, acc= 60.4% |
+Train 7: (2320, 47913)
+Epoch  10 | Train: loss=0.876, acc= 70.4% | time=1114.2ms | Valid: loss=1.133, acc= 62.4% |
+Train 7: (2320, 47913)
+Epoch  11 | Train: loss=0.842, acc= 71.8% | time=2849.4ms | Valid: loss=1.078, acc= 64.4% |
+Train 7: (2320, 47913)
+Epoch  12 | Train: loss=0.846, acc= 70.7% | time=840.5ms | Valid: loss=1.161, acc= 61.2% |
+Train 7: (2320, 47913)
+Epoch  13 | Train: loss=0.817, acc= 72.6% | time=2633.3ms | Valid: loss=1.125, acc= 59.6% | lr=5.0e-03
+Train 7: (2320, 47913)
+Epoch  14 | Train: loss=0.816, acc= 72.0% | time=1074.6ms | Valid: loss=1.082, acc= 65.6% |
+Train 7: (2320, 47913)
+Epoch  15 | Train: loss=0.792, acc= 72.9% | time=2591.0ms | Valid: loss=1.075, acc= 66.0% |
+Train 7: (2320, 47913)
+Epoch  16 | Train: loss=0.788, acc= 72.8% | time=998.0ms | Valid: loss=1.068, acc= 64.4% |
+Train 7: (2320, 47913)
+Epoch  17 | Train: loss=0.787, acc= 73.3% | time=2616.3ms | Valid: loss=1.072, acc= 64.8% |
+Train 7: (2320, 47913)
+Epoch  18 | Train: loss=0.787, acc= 73.1% | time=1036.0ms | Valid: loss=1.113, acc= 61.6% |
+Train 7: (2320, 47913)
+Epoch  19 | Train: loss=0.781, acc= 73.3% | time=2740.6ms | Valid: loss=1.066, acc= 64.0% | lr=2.5e-03
+Train 7: (2320, 47913)
+Epoch  20 | Train: loss=0.771, acc= 73.7% | time=972.1ms | Valid: loss=1.108, acc= 60.4% |
+Train 7: (2320, 47913)
+Epoch  21 | Train: loss=0.769, acc= 73.5% | time=2897.7ms | Valid: loss=1.056, acc= 64.4% |
+Train 7: (2320, 47913)
+Epoch  22 | Train: loss=0.765, acc= 73.6% | time=956.2ms | Valid: loss=1.122, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  23 | Train: loss=0.772, acc= 73.5% | time=2429.9ms | Valid: loss=1.091, acc= 62.8% |
+Train 7: (2320, 47913)
+Epoch  24 | Train: loss=0.759, acc= 74.1% | time=934.2ms | Valid: loss=1.046, acc= 63.6% |
+Train 7: (2320, 47913)
+Epoch  25 | Train: loss=0.756, acc= 73.6% | time=2733.6ms | Valid: loss=1.078, acc= 64.0% | lr=1.3e-03
+Train 7: (2320, 47913)
+Epoch  26 | Train: loss=0.749, acc= 74.5% | time=2327.1ms | Valid: loss=1.097, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  27 | Train: loss=0.756, acc= 74.3% | time=1617.9ms | Valid: loss=1.063, acc= 65.2% |
+Train 7: (2320, 47913)
+Epoch  28 | Train: loss=0.749, acc= 74.7% | time=2829.1ms | Valid: loss=1.060, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  29 | Train: loss=0.754, acc= 74.5% | time=1575.0ms | Valid: loss=1.080, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  30 | Train: loss=0.750, acc= 74.1% | time=2704.1ms | Valid: loss=1.060, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  31 | Train: loss=0.747, acc= 74.4% | time=693.3ms | Valid: loss=1.107, acc= 62.4% | lr=6.3e-04
+Train 7: (2320, 47913)
+Epoch  32 | Train: loss=0.743, acc= 74.5% | time=2851.7ms | Valid: loss=1.034, acc= 66.4% | *
+Train 7: (2320, 47913)
+Epoch  33 | Train: loss=0.751, acc= 74.1% | time=1470.5ms | Valid: loss=1.057, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  34 | Train: loss=0.754, acc= 74.0% | time=2160.8ms | Valid: loss=1.099, acc= 62.4% |
+Train 7: (2320, 47913)
+Epoch  35 | Train: loss=0.755, acc= 74.5% | time=2402.3ms | Valid: loss=1.078, acc= 63.6% |
+Train 7: (2320, 47913)
+Epoch  36 | Train: loss=0.750, acc= 74.8% | time=1520.7ms | Valid: loss=1.057, acc= 63.6% |
+Train 7: (2320, 47913)
+Epoch  37 | Train: loss=0.744, acc= 74.5% | time=2459.0ms | Valid: loss=1.051, acc= 62.8% |
+Train 7: (2320, 47913)
+Epoch  38 | Train: loss=0.732, acc= 74.5% | time=1095.0ms | Valid: loss=1.044, acc= 64.4% | lr=3.1e-04
+Train 7: (2320, 47913)
+Epoch  39 | Train: loss=0.749, acc= 74.8% | time=2815.9ms | Valid: loss=1.088, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  40 | Train: loss=0.745, acc= 74.5% | time=995.2ms | Valid: loss=1.076, acc= 62.4% |
+Train 7: (2320, 47913)
+Epoch  41 | Train: loss=0.743, acc= 75.0% | time=2665.9ms | Valid: loss=1.068, acc= 64.4% |
+Train 7: (2320, 47913)
+Epoch  42 | Train: loss=0.741, acc= 74.4% | time=1167.9ms | Valid: loss=1.045, acc= 65.6% |
+Train 7: (2320, 47913)
+Epoch  43 | Train: loss=0.744, acc= 74.6% | time=2706.0ms | Valid: loss=1.100, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  44 | Train: loss=0.741, acc= 74.4% | time=1138.6ms | Valid: loss=1.034, acc= 64.0% | lr=1.6e-04
+Train 7: (2320, 47913)
+Epoch  45 | Train: loss=0.738, acc= 74.8% | time=2738.4ms | Valid: loss=1.056, acc= 66.0% |
+Train 7: (2320, 47913)
+Epoch  46 | Train: loss=0.738, acc= 74.4% | time=919.3ms | Valid: loss=1.073, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  47 | Train: loss=0.751, acc= 73.9% | time=2660.9ms | Valid: loss=1.078, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  48 | Train: loss=0.743, acc= 74.8% | time=2383.7ms | Valid: loss=1.103, acc= 63.6% |
+Train 7: (2320, 47913)
+Epoch  49 | Train: loss=0.751, acc= 74.5% | time=1032.9ms | Valid: loss=1.088, acc= 63.6% |
+Train 7: (2320, 47913)
+Epoch  50 | Train: loss=0.747, acc= 74.1% | time=2487.6ms | Valid: loss=1.087, acc= 62.8% | lr=7.8e-05
+Train 7: (2320, 47913)
+Epoch  51 | Train: loss=0.753, acc= 74.5% | time=1460.8ms | Valid: loss=1.063, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  52 | Train: loss=0.746, acc= 74.0% | time=2595.0ms | Valid: loss=1.093, acc= 62.0% |
+Train 7: (2320, 47913)
+Epoch  53 | Train: loss=0.750, acc= 73.9% | time=1565.3ms | Valid: loss=1.064, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  54 | Train: loss=0.746, acc= 74.4% | time=2550.5ms | Valid: loss=1.106, acc= 63.2% |
+Train 7: (2320, 47913)
+Epoch  55 | Train: loss=0.748, acc= 74.4% | time=1166.5ms | Valid: loss=1.048, acc= 63.6% |
+Train 7: (2320, 47913)
+Epoch  56 | Train: loss=0.743, acc= 74.4% | time=2775.9ms | Valid: loss=1.049, acc= 62.0% | lr=3.9e-05
+Train 7: (2320, 47913)
+Epoch  57 | Train: loss=0.745, acc= 74.7% | time=790.6ms | Valid: loss=1.061, acc= 64.4% |
+Train 7: (2320, 47913)
+Epoch  58 | Train: loss=0.746, acc= 74.7% | time=2631.4ms | Valid: loss=1.067, acc= 66.0% |
+Train 7: (2320, 47913)
+Epoch  59 | Train: loss=0.745, acc= 74.5% | time=2143.4ms | Valid: loss=1.076, acc= 64.4% |
+Train 7: (2320, 47913)
+Epoch  60 | Train: loss=0.741, acc= 74.4% | time=1229.1ms | Valid: loss=1.080, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  61 | Train: loss=0.742, acc= 74.5% | time=2568.2ms | Valid: loss=1.047, acc= 64.0% |
+Train 7: (2320, 47913)
+Epoch  62 | Train: loss=0.742, acc= 74.5% | time=1155.1ms | Valid: loss=1.087, acc= 62.8% | lr=2.0e-05
+Train 7: (2320, 47913)
+Epoch  63 | Train: loss=0.735, acc= 74.8% | time=2775.8ms | Valid: loss=1.052, acc= 65.6% |
+Train 7: (2320, 47913)
+Epoch  64 | Train: loss=0.743, acc= 75.0% | time=1051.2ms | Valid: loss=1.071, acc= 64.8% |
+Train 7: (2320, 47913)
+Epoch  65 | Train: loss=0.746, acc= 74.4% | time=2578.8ms | Valid: loss=1.059, acc= 65.2% |
+Train 7: (2320, 47913)
+Epoch  66 | Train: loss=0.750, acc= 74.7% | time=680.7ms | Valid: loss=1.080, acc= 65.2% |
+Train 7: (2320, 47913)
+Epoch  67 | Train: loss=0.737, acc= 74.8% | time=2548.4ms | Valid: loss=1.049, acc= 62.8% |
+Train 7: (2320, 47913)
+Epoch  68 | Train: loss=0.739, acc= 75.0% | time=2246.3ms | Valid: loss=1.064, acc= 62.4% | lr=9.8e-06
+Test: loss=0.905 , acc= 69.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.991 0.991 0.991 0.991 0.991]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 17/48
+Layer 2 : 298/576
+Layer 3 : 411/512
+Layer 4 : 591/1024
+Layer 5 : 788/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.8%  67.5%  70.8%  70.9%  73.3%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.3%  67.3%  70.2%  71.8%  73.8%  71.5%   0.0%   0.0%   0.0%   0.0% 
+	 76.5%  66.4%  71.2%  71.4%  73.7%  71.8%  70.4%   0.0%   0.0%   0.0% 
+	 76.8%  66.5%  71.3%  71.2%  74.0%  72.5%  72.7%  69.5%   0.0%   0.0% 
+****************************************************************************************************
+Task  8 (cifar100-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 8: (6608, 52201)
+Epoch   1 | Train: loss=1.187, acc= 59.7% | time=2552.1ms | Valid: loss=1.308, acc= 55.6% | *
+Train 8: (2320, 47913)
+Epoch   2 | Train: loss=1.016, acc= 65.6% | time=2454.4ms | Valid: loss=1.146, acc= 62.0% | *
+Train 8: (2320, 47913)
+Epoch   3 | Train: loss=1.036, acc= 64.3% | time=1276.7ms | Valid: loss=1.206, acc= 62.0% |
+Train 8: (2320, 47913)
+Epoch   4 | Train: loss=0.963, acc= 67.1% | time=2459.9ms | Valid: loss=1.161, acc= 62.4% |
+Train 8: (2320, 47913)
+Epoch   5 | Train: loss=0.937, acc= 68.1% | time=1006.2ms | Valid: loss=1.159, acc= 62.8% |
+Train 8: (2320, 47913)
+Epoch   6 | Train: loss=0.905, acc= 69.4% | time=2671.3ms | Valid: loss=1.109, acc= 65.6% | *
+Train 8: (2320, 47913)
+Epoch   7 | Train: loss=0.875, acc= 70.3% | time=877.9ms | Valid: loss=1.154, acc= 64.0% |
+Train 8: (2320, 47913)
+Epoch   8 | Train: loss=0.866, acc= 70.6% | time=2686.6ms | Valid: loss=1.084, acc= 63.2% | *
+Train 8: (2320, 47913)
+Epoch   9 | Train: loss=0.846, acc= 71.7% | time=2120.0ms | Valid: loss=1.096, acc= 66.0% |
+Train 8: (2320, 47913)
+Epoch  10 | Train: loss=0.860, acc= 71.1% | time=2102.8ms | Valid: loss=1.124, acc= 63.2% |
+Train 8: (2320, 47913)
+Epoch  11 | Train: loss=0.815, acc= 72.4% | time=3076.1ms | Valid: loss=1.083, acc= 64.8% | *
+Train 8: (2320, 47913)
+Epoch  12 | Train: loss=0.795, acc= 73.7% | time=1243.7ms | Valid: loss=1.079, acc= 65.2% | *
+Train 8: (2320, 47913)
+Epoch  13 | Train: loss=0.796, acc= 73.8% | time=2890.7ms | Valid: loss=1.082, acc= 65.6% |
+Train 8: (2320, 47913)
+Epoch  14 | Train: loss=0.798, acc= 73.5% | time=1599.6ms | Valid: loss=1.115, acc= 64.0% |
+Train 8: (2320, 47913)
+Epoch  15 | Train: loss=0.753, acc= 75.1% | time=2582.5ms | Valid: loss=1.073, acc= 66.8% | *
+Train 8: (2320, 47913)
+Epoch  16 | Train: loss=0.749, acc= 74.1% | time=1069.3ms | Valid: loss=1.061, acc= 67.6% | *
+Train 8: (2320, 47913)
+Epoch  17 | Train: loss=0.749, acc= 75.0% | time=2829.0ms | Valid: loss=1.100, acc= 65.6% |
+Train 8: (2320, 47913)
+Epoch  18 | Train: loss=0.742, acc= 74.9% | time=999.0ms | Valid: loss=1.066, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  19 | Train: loss=0.690, acc= 77.1% | time=2761.7ms | Valid: loss=1.046, acc= 67.6% | *
+Train 8: (2320, 47913)
+Epoch  20 | Train: loss=0.711, acc= 76.1% | time=1048.0ms | Valid: loss=1.143, acc= 66.0% |
+Train 8: (2320, 47913)
+Epoch  21 | Train: loss=0.691, acc= 77.1% | time=2607.9ms | Valid: loss=1.084, acc= 66.0% |
+Train 8: (2320, 47913)
+Epoch  22 | Train: loss=0.687, acc= 77.0% | time=798.0ms | Valid: loss=1.047, acc= 64.4% |
+Train 8: (2320, 47913)
+Epoch  23 | Train: loss=0.662, acc= 77.9% | time=2574.4ms | Valid: loss=1.038, acc= 66.8% | *
+Train 8: (2320, 47913)
+Epoch  24 | Train: loss=0.664, acc= 77.5% | time=2302.2ms | Valid: loss=1.093, acc= 64.0% |
+Train 8: (2320, 47913)
+Epoch  25 | Train: loss=0.669, acc= 77.3% | time=1904.7ms | Valid: loss=1.083, acc= 62.8% |
+Train 8: (2320, 47913)
+Epoch  26 | Train: loss=0.649, acc= 78.3% | time=2701.5ms | Valid: loss=1.074, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  27 | Train: loss=0.644, acc= 78.8% | time=1001.6ms | Valid: loss=1.062, acc= 65.2% |
+Train 8: (2320, 47913)
+Epoch  28 | Train: loss=0.626, acc= 79.0% | time=2799.6ms | Valid: loss=1.054, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  29 | Train: loss=0.632, acc= 79.9% | time=1281.8ms | Valid: loss=1.073, acc= 67.2% | lr=5.0e-03
+Train 8: (2320, 47913)
+Epoch  30 | Train: loss=0.603, acc= 79.6% | time=2807.3ms | Valid: loss=1.027, acc= 67.2% | *
+Train 8: (2320, 47913)
+Epoch  31 | Train: loss=0.599, acc= 79.6% | time=919.8ms | Valid: loss=1.014, acc= 67.2% | *
+Train 8: (2320, 47913)
+Epoch  32 | Train: loss=0.598, acc= 79.6% | time=2788.9ms | Valid: loss=1.017, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  33 | Train: loss=0.590, acc= 80.6% | time=1111.7ms | Valid: loss=1.024, acc= 65.6% |
+Train 8: (2320, 47913)
+Epoch  34 | Train: loss=0.593, acc= 80.3% | time=1934.8ms | Valid: loss=1.016, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  35 | Train: loss=0.575, acc= 80.7% | time=1300.5ms | Valid: loss=1.035, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  36 | Train: loss=0.576, acc= 80.8% | time=1150.2ms | Valid: loss=1.034, acc= 68.4% |
+Train 8: (2320, 47913)
+Epoch  37 | Train: loss=0.584, acc= 80.4% | time=1086.6ms | Valid: loss=0.998, acc= 67.2% | *
+Train 8: (2320, 47913)
+Epoch  38 | Train: loss=0.583, acc= 80.4% | time=1221.5ms | Valid: loss=1.006, acc= 66.4% |
+Train 8: (2320, 47913)
+Epoch  39 | Train: loss=0.583, acc= 80.3% | time=1295.4ms | Valid: loss=1.016, acc= 66.8% |
+Train 8: (2320, 47913)
+Epoch  40 | Train: loss=0.565, acc= 80.7% | time=1387.0ms | Valid: loss=0.982, acc= 69.2% | *
+Train 8: (2320, 47913)
+Epoch  41 | Train: loss=0.571, acc= 80.8% | time=1144.2ms | Valid: loss=0.985, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  42 | Train: loss=0.577, acc= 81.0% | time=1488.5ms | Valid: loss=1.027, acc= 69.6% |
+Train 8: (2320, 47913)
+Epoch  43 | Train: loss=0.549, acc= 81.9% | time=1327.0ms | Valid: loss=1.042, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  44 | Train: loss=0.560, acc= 81.2% | time=1326.9ms | Valid: loss=1.017, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  45 | Train: loss=0.554, acc= 81.3% | time=1365.8ms | Valid: loss=1.033, acc= 69.6% |
+Train 8: (2320, 47913)
+Epoch  46 | Train: loss=0.544, acc= 81.7% | time=1360.4ms | Valid: loss=1.013, acc= 68.8% | lr=2.5e-03
+Train 8: (2320, 47913)
+Epoch  47 | Train: loss=0.540, acc= 81.7% | time=1441.4ms | Valid: loss=1.040, acc= 65.6% |
+Train 8: (2320, 47913)
+Epoch  48 | Train: loss=0.545, acc= 81.9% | time=1239.3ms | Valid: loss=1.025, acc= 66.4% |
+Train 8: (2320, 47913)
+Epoch  49 | Train: loss=0.544, acc= 82.2% | time=1164.0ms | Valid: loss=0.989, acc= 66.0% |
+Train 8: (2320, 47913)
+Epoch  50 | Train: loss=0.540, acc= 81.8% | time=1309.3ms | Valid: loss=1.010, acc= 70.0% |
+Train 8: (2320, 47913)
+Epoch  51 | Train: loss=0.536, acc= 81.7% | time=1051.5ms | Valid: loss=0.998, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  52 | Train: loss=0.537, acc= 81.5% | time=1309.2ms | Valid: loss=1.025, acc= 67.6% | lr=1.3e-03
+Train 8: (2320, 47913)
+Epoch  53 | Train: loss=0.536, acc= 82.0% | time=1290.9ms | Valid: loss=0.964, acc= 68.4% | *
+Train 8: (2320, 47913)
+Epoch  54 | Train: loss=0.528, acc= 82.5% | time=1174.1ms | Valid: loss=1.000, acc= 68.4% |
+Train 8: (2320, 47913)
+Epoch  55 | Train: loss=0.540, acc= 82.2% | time=1262.0ms | Valid: loss=0.977, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  56 | Train: loss=0.531, acc= 82.0% | time=1106.7ms | Valid: loss=1.052, acc= 65.6% |
+Train 8: (2320, 47913)
+Epoch  57 | Train: loss=0.538, acc= 82.0% | time=1195.0ms | Valid: loss=1.012, acc= 66.0% |
+Train 8: (2320, 47913)
+Epoch  58 | Train: loss=0.529, acc= 82.1% | time=1159.1ms | Valid: loss=0.982, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  59 | Train: loss=0.528, acc= 82.5% | time=2789.8ms | Valid: loss=0.995, acc= 66.4% | lr=6.3e-04
+Train 8: (2320, 47913)
+Epoch  60 | Train: loss=0.538, acc= 82.1% | time=1205.7ms | Valid: loss=1.047, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  61 | Train: loss=0.539, acc= 82.0% | time=2739.2ms | Valid: loss=0.982, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  62 | Train: loss=0.524, acc= 82.5% | time=1712.3ms | Valid: loss=1.028, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  63 | Train: loss=0.534, acc= 82.3% | time=2056.5ms | Valid: loss=0.989, acc= 68.4% |
+Train 8: (2320, 47913)
+Epoch  64 | Train: loss=0.530, acc= 82.3% | time=2813.6ms | Valid: loss=1.021, acc= 69.6% |
+Train 8: (2320, 47913)
+Epoch  65 | Train: loss=0.529, acc= 82.4% | time=1106.7ms | Valid: loss=1.020, acc= 69.6% | lr=3.1e-04
+Train 8: (2320, 47913)
+Epoch  66 | Train: loss=0.529, acc= 82.3% | time=2679.1ms | Valid: loss=1.022, acc= 65.6% |
+Train 8: (2320, 47913)
+Epoch  67 | Train: loss=0.523, acc= 82.7% | time=1030.4ms | Valid: loss=1.013, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  68 | Train: loss=0.525, acc= 82.6% | time=2541.6ms | Valid: loss=1.002, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  69 | Train: loss=0.532, acc= 82.2% | time=820.4ms | Valid: loss=0.989, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  70 | Train: loss=0.525, acc= 82.4% | time=2817.3ms | Valid: loss=1.011, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  71 | Train: loss=0.528, acc= 82.4% | time=1053.9ms | Valid: loss=0.995, acc= 68.8% | lr=1.6e-04
+Train 8: (2320, 47913)
+Epoch  72 | Train: loss=0.519, acc= 82.8% | time=2574.9ms | Valid: loss=0.991, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  73 | Train: loss=0.526, acc= 82.4% | time=744.2ms | Valid: loss=0.994, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  74 | Train: loss=0.533, acc= 82.6% | time=1975.8ms | Valid: loss=0.994, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  75 | Train: loss=0.531, acc= 82.5% | time=2657.6ms | Valid: loss=1.026, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  76 | Train: loss=0.526, acc= 82.4% | time=1446.1ms | Valid: loss=0.998, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  77 | Train: loss=0.529, acc= 82.4% | time=2633.3ms | Valid: loss=0.995, acc= 68.4% | lr=7.8e-05
+Train 8: (2320, 47913)
+Epoch  78 | Train: loss=0.519, acc= 82.8% | time=788.2ms | Valid: loss=0.991, acc= 68.4% |
+Train 8: (2320, 47913)
+Epoch  79 | Train: loss=0.528, acc= 82.3% | time=2681.3ms | Valid: loss=1.005, acc= 68.4% |
+Train 8: (2320, 47913)
+Epoch  80 | Train: loss=0.525, acc= 82.4% | time=783.0ms | Valid: loss=0.982, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  81 | Train: loss=0.528, acc= 82.5% | time=2871.2ms | Valid: loss=0.991, acc= 69.6% |
+Train 8: (2320, 47913)
+Epoch  82 | Train: loss=0.518, acc= 82.4% | time=2239.4ms | Valid: loss=1.042, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  83 | Train: loss=0.521, acc= 82.8% | time=1833.9ms | Valid: loss=0.993, acc= 68.4% | lr=3.9e-05
+Train 8: (2320, 47913)
+Epoch  84 | Train: loss=0.525, acc= 82.7% | time=2885.0ms | Valid: loss=0.971, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  85 | Train: loss=0.529, acc= 81.9% | time=817.7ms | Valid: loss=1.006, acc= 68.4% |
+Train 8: (2320, 47913)
+Epoch  86 | Train: loss=0.528, acc= 82.6% | time=2729.7ms | Valid: loss=1.002, acc= 69.2% |
+Train 8: (2320, 47913)
+Epoch  87 | Train: loss=0.526, acc= 82.5% | time=1823.5ms | Valid: loss=0.987, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  88 | Train: loss=0.520, acc= 82.7% | time=2304.2ms | Valid: loss=0.992, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  89 | Train: loss=0.520, acc= 82.4% | time=2544.0ms | Valid: loss=1.021, acc= 68.0% | lr=2.0e-05
+Train 8: (2320, 47913)
+Epoch  90 | Train: loss=0.526, acc= 82.4% | time=1543.7ms | Valid: loss=1.018, acc= 67.6% |
+Train 8: (2320, 47913)
+Epoch  91 | Train: loss=0.534, acc= 81.8% | time=2773.6ms | Valid: loss=1.015, acc= 68.8% |
+Train 8: (2320, 47913)
+Epoch  92 | Train: loss=0.513, acc= 82.6% | time=1668.7ms | Valid: loss=1.042, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  93 | Train: loss=0.519, acc= 82.6% | time=2971.6ms | Valid: loss=0.999, acc= 67.2% |
+Train 8: (2320, 47913)
+Epoch  94 | Train: loss=0.526, acc= 82.5% | time=1433.2ms | Valid: loss=1.022, acc= 68.0% |
+Train 8: (2320, 47913)
+Epoch  95 | Train: loss=0.517, acc= 82.4% | time=2818.1ms | Valid: loss=0.969, acc= 68.8% | lr=9.8e-06
+Test: loss=0.859 , acc= 71.5%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.994 0.994 0.994 0.994 0.994]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 20/48
+Layer 2 : 358/576
+Layer 3 : 446/512
+Layer 4 : 674/1024
+Layer 5 : 898/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.8%  67.5%  70.8%  70.9%  73.3%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.3%  67.3%  70.2%  71.8%  73.8%  71.5%   0.0%   0.0%   0.0%   0.0% 
+	 76.5%  66.4%  71.2%  71.4%  73.7%  71.8%  70.4%   0.0%   0.0%   0.0% 
+	 76.8%  66.5%  71.3%  71.2%  74.0%  72.5%  72.7%  69.5%   0.0%   0.0% 
+	 76.4%  65.0%  72.5%  71.4%  73.2%  72.9%  70.9%  68.8%  71.5%   0.0% 
+****************************************************************************************************
+Task  9 (cifar100-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([48, 48])
+Layer 2 - Projection Matrix shape: torch.Size([576, 576])
+Layer 3 - Projection Matrix shape: torch.Size([512, 512])
+Layer 4 - Projection Matrix shape: torch.Size([1024, 1024])
+Layer 5 - Projection Matrix shape: torch.Size([2048, 2048])
+----------------------------------------
+Train 9: (6608, 52201)
+Epoch   1 | Train: loss=1.004, acc= 67.3% | time=3015.5ms | Valid: loss=1.090, acc= 63.2% | *
+Train 9: (2320, 47913)
+Epoch   2 | Train: loss=0.909, acc= 69.2% | time=2519.4ms | Valid: loss=1.007, acc= 65.2% | *
+Train 9: (2320, 47913)
+Epoch   3 | Train: loss=0.861, acc= 71.1% | time=2093.0ms | Valid: loss=0.981, acc= 64.0% | *
+Train 9: (2320, 47913)
+Epoch   4 | Train: loss=0.840, acc= 71.6% | time=3195.3ms | Valid: loss=0.944, acc= 68.8% | *
+Train 9: (2320, 47913)
+Epoch   5 | Train: loss=0.848, acc= 71.9% | time=929.0ms | Valid: loss=0.998, acc= 65.2% |
+Train 9: (2320, 47913)
+Epoch   6 | Train: loss=0.779, acc= 73.8% | time=2739.1ms | Valid: loss=0.893, acc= 70.4% | *
+Train 9: (2320, 47913)
+Epoch   7 | Train: loss=0.787, acc= 73.9% | time=1167.9ms | Valid: loss=0.920, acc= 70.4% |
+Train 9: (2320, 47913)
+Epoch   8 | Train: loss=0.776, acc= 74.3% | time=2862.7ms | Valid: loss=0.905, acc= 70.4% |
+Train 9: (2320, 47913)
+Epoch   9 | Train: loss=0.746, acc= 74.8% | time=1418.4ms | Valid: loss=0.867, acc= 73.6% | *
+Train 9: (2320, 47913)
+Epoch  10 | Train: loss=0.740, acc= 75.5% | time=2505.9ms | Valid: loss=0.865, acc= 72.0% | *
+Train 9: (2320, 47913)
+Epoch  11 | Train: loss=0.731, acc= 75.6% | time=1677.2ms | Valid: loss=0.862, acc= 71.6% | *
+Train 9: (2320, 47913)
+Epoch  12 | Train: loss=0.745, acc= 75.2% | time=2192.5ms | Valid: loss=0.917, acc= 72.0% |
+Train 9: (2320, 47913)
+Epoch  13 | Train: loss=0.735, acc= 75.6% | time=3162.7ms | Valid: loss=0.935, acc= 70.8% |
+Train 9: (2320, 47913)
+Epoch  14 | Train: loss=0.701, acc= 76.2% | time=894.0ms | Valid: loss=0.910, acc= 68.8% |
+Train 9: (2320, 47913)
+Epoch  15 | Train: loss=0.680, acc= 77.3% | time=2947.2ms | Valid: loss=0.844, acc= 74.4% | *
+Train 9: (2320, 47913)
+Epoch  16 | Train: loss=0.652, acc= 78.3% | time=1782.8ms | Valid: loss=0.865, acc= 74.0% |
+Train 9: (2320, 47913)
+Epoch  17 | Train: loss=0.669, acc= 77.6% | time=2486.3ms | Valid: loss=0.877, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  18 | Train: loss=0.657, acc= 78.2% | time=2784.2ms | Valid: loss=0.934, acc= 70.0% |
+Train 9: (2320, 47913)
+Epoch  19 | Train: loss=0.628, acc= 78.9% | time=1212.7ms | Valid: loss=0.851, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  20 | Train: loss=0.633, acc= 78.9% | time=2579.2ms | Valid: loss=0.833, acc= 73.2% | *
+Train 9: (2320, 47913)
+Epoch  21 | Train: loss=0.659, acc= 78.1% | time=1122.9ms | Valid: loss=0.891, acc= 70.4% |
+Train 9: (2320, 47913)
+Epoch  22 | Train: loss=0.627, acc= 78.9% | time=2781.8ms | Valid: loss=0.849, acc= 73.6% |
+Train 9: (2320, 47913)
+Epoch  23 | Train: loss=0.626, acc= 78.9% | time=910.5ms | Valid: loss=0.884, acc= 70.0% |
+Train 9: (2320, 47913)
+Epoch  24 | Train: loss=0.598, acc= 79.9% | time=2869.6ms | Valid: loss=0.826, acc= 74.0% | *
+Train 9: (2320, 47913)
+Epoch  25 | Train: loss=0.617, acc= 78.9% | time=2226.0ms | Valid: loss=0.865, acc= 73.6% |
+Train 9: (2320, 47913)
+Epoch  26 | Train: loss=0.601, acc= 79.7% | time=2552.3ms | Valid: loss=0.883, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  27 | Train: loss=0.578, acc= 80.6% | time=2605.2ms | Valid: loss=0.794, acc= 74.8% | *
+Train 9: (2320, 47913)
+Epoch  28 | Train: loss=0.608, acc= 79.3% | time=885.6ms | Valid: loss=0.830, acc= 72.0% |
+Train 9: (2320, 47913)
+Epoch  29 | Train: loss=0.581, acc= 80.3% | time=2643.7ms | Valid: loss=0.844, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  30 | Train: loss=0.583, acc= 80.7% | time=924.6ms | Valid: loss=0.853, acc= 76.4% |
+Train 9: (2320, 47913)
+Epoch  31 | Train: loss=0.567, acc= 80.6% | time=2562.8ms | Valid: loss=0.871, acc= 72.8% |
+Train 9: (2320, 47913)
+Epoch  32 | Train: loss=0.558, acc= 81.2% | time=2099.7ms | Valid: loss=0.814, acc= 76.0% |
+Train 9: (2320, 47913)
+Epoch  33 | Train: loss=0.556, acc= 80.7% | time=1972.8ms | Valid: loss=0.872, acc= 74.4% | lr=5.0e-03
+Train 9: (2320, 47913)
+Epoch  34 | Train: loss=0.562, acc= 80.7% | time=2528.2ms | Valid: loss=0.884, acc= 72.4% |
+Train 9: (2320, 47913)
+Epoch  35 | Train: loss=0.541, acc= 81.4% | time=775.4ms | Valid: loss=0.816, acc= 77.6% |
+Train 9: (2320, 47913)
+Epoch  36 | Train: loss=0.552, acc= 81.5% | time=2899.3ms | Valid: loss=0.848, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  37 | Train: loss=0.531, acc= 82.1% | time=1647.0ms | Valid: loss=0.842, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  38 | Train: loss=0.542, acc= 81.6% | time=2816.5ms | Valid: loss=0.879, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  39 | Train: loss=0.533, acc= 81.8% | time=1630.3ms | Valid: loss=0.811, acc= 74.4% | lr=2.5e-03
+Train 9: (2320, 47913)
+Epoch  40 | Train: loss=0.542, acc= 81.1% | time=2843.5ms | Valid: loss=0.854, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  41 | Train: loss=0.538, acc= 82.1% | time=1111.6ms | Valid: loss=0.844, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  42 | Train: loss=0.529, acc= 81.8% | time=2835.5ms | Valid: loss=0.868, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  43 | Train: loss=0.532, acc= 82.0% | time=653.6ms | Valid: loss=0.828, acc= 73.6% |
+Train 9: (2320, 47913)
+Epoch  44 | Train: loss=0.518, acc= 82.4% | time=2029.3ms | Valid: loss=0.834, acc= 74.8% |
+Train 9: (2320, 47913)
+Epoch  45 | Train: loss=0.522, acc= 81.7% | time=2815.8ms | Valid: loss=0.850, acc= 74.8% | lr=1.3e-03
+Train 9: (2320, 47913)
+Epoch  46 | Train: loss=0.520, acc= 82.2% | time=1842.7ms | Valid: loss=0.780, acc= 74.8% | *
+Train 9: (2320, 47913)
+Epoch  47 | Train: loss=0.523, acc= 82.4% | time=2833.9ms | Valid: loss=0.835, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  48 | Train: loss=0.527, acc= 82.1% | time=1399.8ms | Valid: loss=0.877, acc= 71.2% |
+Train 9: (2320, 47913)
+Epoch  49 | Train: loss=0.524, acc= 82.3% | time=2569.2ms | Valid: loss=0.847, acc= 75.2% |
+Train 9: (2320, 47913)
+Epoch  50 | Train: loss=0.524, acc= 82.2% | time=1271.3ms | Valid: loss=0.848, acc= 74.8% |
+Train 9: (2320, 47913)
+Epoch  51 | Train: loss=0.526, acc= 82.2% | time=2960.7ms | Valid: loss=0.818, acc= 76.0% |
+Train 9: (2320, 47913)
+Epoch  52 | Train: loss=0.527, acc= 82.2% | time=1048.7ms | Valid: loss=0.833, acc= 74.4% | lr=6.3e-04
+Train 9: (2320, 47913)
+Epoch  53 | Train: loss=0.528, acc= 82.2% | time=2470.0ms | Valid: loss=0.825, acc= 74.0% |
+Train 9: (2320, 47913)
+Epoch  54 | Train: loss=0.514, acc= 81.9% | time=943.2ms | Valid: loss=0.830, acc= 71.6% |
+Train 9: (2320, 47913)
+Epoch  55 | Train: loss=0.521, acc= 82.1% | time=2522.9ms | Valid: loss=0.839, acc= 74.8% |
+Train 9: (2320, 47913)
+Epoch  56 | Train: loss=0.526, acc= 82.3% | time=1365.5ms | Valid: loss=0.874, acc= 74.8% |
+Train 9: (2320, 47913)
+Epoch  57 | Train: loss=0.517, acc= 82.1% | time=2491.0ms | Valid: loss=0.813, acc= 73.6% |
+Train 9: (2320, 47913)
+Epoch  58 | Train: loss=0.517, acc= 82.5% | time=2715.6ms | Valid: loss=0.851, acc= 74.4% | lr=3.1e-04
+Train 9: (2320, 47913)
+Epoch  59 | Train: loss=0.523, acc= 81.8% | time=1704.2ms | Valid: loss=0.802, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  60 | Train: loss=0.513, acc= 82.6% | time=2751.6ms | Valid: loss=0.810, acc= 76.0% |
+Train 9: (2320, 47913)
+Epoch  61 | Train: loss=0.520, acc= 81.9% | time=1511.1ms | Valid: loss=0.823, acc= 74.0% |
+Train 9: (2320, 47913)
+Epoch  62 | Train: loss=0.509, acc= 82.3% | time=2977.3ms | Valid: loss=0.800, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  63 | Train: loss=0.520, acc= 82.1% | time=1119.2ms | Valid: loss=0.818, acc= 77.6% |
+Train 9: (2320, 47913)
+Epoch  64 | Train: loss=0.518, acc= 82.2% | time=2791.6ms | Valid: loss=0.858, acc= 73.6% | lr=1.6e-04
+Train 9: (2320, 47913)
+Epoch  65 | Train: loss=0.519, acc= 82.2% | time=1084.5ms | Valid: loss=0.837, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  66 | Train: loss=0.529, acc= 81.3% | time=2646.7ms | Valid: loss=0.817, acc= 75.6% |
+Train 9: (2320, 47913)
+Epoch  67 | Train: loss=0.517, acc= 82.1% | time=1181.8ms | Valid: loss=0.796, acc= 75.6% |
+Train 9: (2320, 47913)
+Epoch  68 | Train: loss=0.514, acc= 82.8% | time=2584.3ms | Valid: loss=0.854, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  69 | Train: loss=0.528, acc= 82.1% | time=1574.5ms | Valid: loss=0.825, acc= 72.0% |
+Train 9: (2320, 47913)
+Epoch  70 | Train: loss=0.509, acc= 81.4% | time=2760.4ms | Valid: loss=0.836, acc= 76.0% | lr=7.8e-05
+Train 9: (2320, 47913)
+Epoch  71 | Train: loss=0.524, acc= 81.5% | time=2023.0ms | Valid: loss=0.868, acc= 73.6% |
+Train 9: (2320, 47913)
+Epoch  72 | Train: loss=0.526, acc= 81.7% | time=2798.3ms | Valid: loss=0.829, acc= 71.6% |
+Train 9: (2320, 47913)
+Epoch  73 | Train: loss=0.508, acc= 82.7% | time=1407.3ms | Valid: loss=0.861, acc= 74.0% |
+Train 9: (2320, 47913)
+Epoch  74 | Train: loss=0.527, acc= 81.8% | time=2441.9ms | Valid: loss=0.881, acc= 72.0% |
+Train 9: (2320, 47913)
+Epoch  75 | Train: loss=0.515, acc= 82.4% | time=1854.4ms | Valid: loss=0.813, acc= 76.0% |
+Train 9: (2320, 47913)
+Epoch  76 | Train: loss=0.514, acc= 82.8% | time=2854.2ms | Valid: loss=0.815, acc= 74.4% | lr=3.9e-05
+Train 9: (2320, 47913)
+Epoch  77 | Train: loss=0.517, acc= 82.0% | time=1841.9ms | Valid: loss=0.839, acc= 73.6% |
+Train 9: (2320, 47913)
+Epoch  78 | Train: loss=0.515, acc= 82.4% | time=2688.3ms | Valid: loss=0.851, acc= 73.2% |
+Train 9: (2320, 47913)
+Epoch  79 | Train: loss=0.520, acc= 82.1% | time=1136.5ms | Valid: loss=0.814, acc= 75.2% |
+Train 9: (2320, 47913)
+Epoch  80 | Train: loss=0.517, acc= 82.1% | time=2722.4ms | Valid: loss=0.820, acc= 74.0% |
+Train 9: (2320, 47913)
+Epoch  81 | Train: loss=0.525, acc= 81.8% | time=1234.4ms | Valid: loss=0.831, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  82 | Train: loss=0.511, acc= 82.7% | time=2716.5ms | Valid: loss=0.817, acc= 75.2% | lr=2.0e-05
+Train 9: (2320, 47913)
+Epoch  83 | Train: loss=0.509, acc= 82.2% | time=885.8ms | Valid: loss=0.885, acc= 72.8% |
+Train 9: (2320, 47913)
+Epoch  84 | Train: loss=0.520, acc= 82.4% | time=2768.7ms | Valid: loss=0.856, acc= 74.8% |
+Train 9: (2320, 47913)
+Epoch  85 | Train: loss=0.520, acc= 82.2% | time=971.6ms | Valid: loss=0.786, acc= 76.8% |
+Train 9: (2320, 47913)
+Epoch  86 | Train: loss=0.510, acc= 82.7% | time=2642.7ms | Valid: loss=0.839, acc= 74.4% |
+Train 9: (2320, 47913)
+Epoch  87 | Train: loss=0.513, acc= 82.4% | time=894.3ms | Valid: loss=0.858, acc= 74.0% |
+Train 9: (2320, 47913)
+Epoch  88 | Train: loss=0.514, acc= 82.5% | time=2606.8ms | Valid: loss=0.835, acc= 72.8% | lr=9.8e-06
+Test: loss=0.780 , acc= 75.5%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (48, 20184)
+Layer 2 : (576, 14400)
+Layer 3 : (512, 2500)
+Layer 4 : (1024, 125)
+Layer 5 : (2048, 125)
+------------------------------
+Threshold:  [0.997 0.997 0.997 0.997 0.997]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 20/48
+Layer 2 : 403/576
+Layer 3 : 473/512
+Layer 4 : 763/1024
+Layer 5 : 1012/2048
+----------------------------------------
+Accuracies =
+	 75.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.1%  66.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.9%  67.5%  71.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 75.0%  64.9%  71.8%  70.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.8%  67.5%  70.8%  70.9%  73.3%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 76.3%  67.3%  70.2%  71.8%  73.8%  71.5%   0.0%   0.0%   0.0%   0.0% 
+	 76.5%  66.4%  71.2%  71.4%  73.7%  71.8%  70.4%   0.0%   0.0%   0.0% 
+	 76.8%  66.5%  71.3%  71.2%  74.0%  72.5%  72.7%  69.5%   0.0%   0.0% 
+	 76.4%  65.0%  72.5%  71.4%  73.2%  72.9%  70.9%  68.8%  71.5%   0.0% 
+	 76.4%  65.7%  70.6%  70.9%  74.8%  71.9%  71.4%  69.4%  73.0%  75.4% 
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 71.95%
+Backward transfer:  0.30%
+[Elapsed time = 4017139.6 ms]
+--------------------------------------------------

@@ -21,6 +21,8 @@ import argparse,time
 import math
 from copy import deepcopy
 
+import tracemalloc
+
 ## Define AlexNet model
 def compute_conv_output_size(Lin,kernel_size,stride=1,padding=0,dilation=1):
     return int(np.floor((Lin+2*padding-dilation*(kernel_size-1)-1)/float(stride)+1))
@@ -117,13 +119,12 @@ def train(args, model, device, x,y, optimizer,criterion, task_id):
     model.train()
     r=np.arange(x.size(0))
     np.random.shuffle(r)
-    r=torch.LongTensor(r).to(device)
+    r=torch.LongTensor(r)#.to(device)
     # Loop batches
     for i in range(0,len(r),args.batch_size_train):
         if i+args.batch_size_train<=len(r): b=r[i:i+args.batch_size_train]
         else: b=r[i:]
-        data = x[b]
-        data, target = data.to(device), y[b].to(device)
+        data, target = x[b].to(device), y[b].to(device)
         optimizer.zero_grad()        
         output = model(data)
         loss = criterion(output[task_id], target)        
@@ -134,13 +135,12 @@ def train_projected(args,model,device,x,y,optimizer,criterion,feature_mat,task_i
     model.train()
     r=np.arange(x.size(0))
     np.random.shuffle(r)
-    r=torch.LongTensor(r).to(device)
+    r=torch.LongTensor(r)#.to(device)
     # Loop batches
     for i in range(0,len(r),args.batch_size_train):
         if i+args.batch_size_train<=len(r): b=r[i:i+args.batch_size_train]
         else: b=r[i:]
-        data = x[b]
-        data, target = data.to(device), y[b].to(device)
+        data, target = x[b].to(device), y[b].to(device)
         optimizer.zero_grad()        
         output = model(data)
         loss = criterion(output[task_id], target)         
@@ -165,14 +165,13 @@ def test(args, model, device, x, y, criterion, task_id):
     correct = 0
     r=np.arange(x.size(0))
     np.random.shuffle(r)
-    r=torch.LongTensor(r).to(device)
+    r=torch.LongTensor(r)#.to(device)
     with torch.no_grad():
         # Loop batches
         for i in range(0,len(r),args.batch_size_test):
             if i+args.batch_size_test<=len(r): b=r[i:i+args.batch_size_test]
             else: b=r[i:]
-            data = x[b]
-            data, target = data.to(device), y[b].to(device)
+            data, target = x[b].to(device), y[b].to(device)
             output = model(data)
             loss = criterion(output[task_id], target)
             pred = output[task_id].argmax(dim=1, keepdim=True) 
@@ -189,7 +188,7 @@ def get_representation_matrix (net, device, x, y=None):
     # Collect activations by forward pass
     r=np.arange(x.size(0))
     np.random.shuffle(r)
-    r=torch.LongTensor(r).to(device)
+    r=torch.LongTensor(r)#.to(device)
     b=r[0:125] # Take 125 random samples 
     example_data = x[b]
     example_data = example_data.to(device)
@@ -280,6 +279,7 @@ def update_GPM (model, mat_list, threshold, feature_list=[],):
 def main(args):
     tstart=time.time()
     ## Device Setting 
+    print(f'GPU available: {torch.cuda.is_available()}')
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
@@ -327,7 +327,10 @@ def main(args):
             for epoch in range(1, args.n_epochs+1):
                 # Train
                 clock0=time.time()
+                tracemalloc.start()
                 train(args, model, device, xtrain, ytrain, optimizer, criterion, k)
+                print(f'Train T0: {tracemalloc.get_traced_memory()}')
+                tracemalloc.stop()
                 clock1=time.time()
                 tr_loss,tr_acc = test(args, model, device, xtrain, ytrain,  criterion, k)
                 print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% | time={:5.1f}ms |'.format(epoch,\
@@ -373,7 +376,10 @@ def main(args):
             for epoch in range(1, args.n_epochs+1):
                 # Train 
                 clock0=time.time()
+                tracemalloc.start()
                 train_projected(args, model,device,xtrain, ytrain,optimizer,criterion,feature_mat,k)
+                print(f'Train {task_id}: {tracemalloc.get_traced_memory()}')
+                tracemalloc.stop()
                 clock1=time.time()
                 tr_loss, tr_acc = test(args, model, device, xtrain, ytrain,criterion,k)
                 print('Epoch {:3d} | Train: loss={:.3f}, acc={:5.1f}% | time={:5.1f}ms |'.format(epoch,\
